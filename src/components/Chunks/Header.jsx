@@ -44,9 +44,9 @@ const Header = () => {
           </div>
           <div className='header-cart'>
             <img
-              src='/src/assets/img/icons/shopping-bag.svg'
-              alt='Коорзина'
-              title='Коорзина'
+              src='./src/assets/img/icons/shopping-bag.svg'
+              alt='Корзина'
+              title='Корзина'
             />
           </div>
           <div className='header-profile'>
