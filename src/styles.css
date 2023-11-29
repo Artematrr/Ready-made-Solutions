@@ -304,7 +304,7 @@ a {
 }
 
 .nav-city::before {
-  content: url('/src/assets/img/icons/map-mark.svg');
+  content: url('img/icons/map-mark.svg');
   display: inline-block;
   position: relative;
   height: 18px;

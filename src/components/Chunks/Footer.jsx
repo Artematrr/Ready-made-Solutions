@@ -4,7 +4,7 @@ const Footer = () => {
       <div className='footer-top'>
         <div className='col-one'>
           <div className='row'>
-            <img src='/src/assets/img/logo-light.svg' alt='Готовые решения' />
+            <img src='img/logo-light.svg' alt='Готовые решения' />
           </div>
           <div className='row'>
             <div className='phone'>+7 926 256-57-56</div>

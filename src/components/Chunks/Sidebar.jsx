@@ -3,7 +3,7 @@ const Sidebar = () => {
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
         <div className='logo'>
-          <img src='/src/assets/img/logo.svg' alt='Готовые Решения' />
+          <img src='img/logo.svg' alt='Готовые Решения' />
         </div>
         <div className='sidebar-nav-label'>Каталог сайтов</div>
         <div className='sidebar-nav'>
@@ -11,7 +11,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
-                  src='/src/assets/img/icons/item-universal.svg'
+                  src='img/icons/item-universal.svg'
                   alt='Универсальный дизайн'
                 />
                 Универсальный дизайн
@@ -21,7 +21,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1 open'>
               <a href='#'>
                 <img
-                  src='/src/assets/img/icons/item-food.svg'
+                  src='img/icons/item-food.svg'
                   alt='Еда, напитки'
                 />
                 Еда, напитки
@@ -85,7 +85,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
-                  src='/src/assets/img/icons/item-medicine.svg'
+                  src='img/icons/item-medicine.svg'
                   alt='Медицина, красота, здоровье'
                 />
                 Медицина, красота, здоровье
@@ -115,7 +115,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
-                  src='/src/assets/img/icons/item-build.svg'
+                  src='img/icons/item-build.svg'
                   alt='Строительство, ремонт'
                 />
                 Строительство, ремонт
@@ -125,7 +125,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
-                  src='/src/assets/img/icons/item-services.svg'
+                  src='img/icons/item-services.svg'
                   alt='Услугм'
                 />
                 Услугм
