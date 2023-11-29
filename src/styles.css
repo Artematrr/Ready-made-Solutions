@@ -81,38 +81,154 @@ select {
 
 :root {
   --color-black: #131313;
+  --color-gray-dark: #969696;
   --color-gray: #c9c9c3;
   --color-gray-light: #e4e4e4;
   --color-white: #fff;
   --color-red: #a20000;
   --color-dark: #2f3b42;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-red);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-dark);
+}
+
+/* Sidebar */
+.sidebar-wrapper {
+  width: 400px;
+  max-height: 100dvh;
+  overflow-y: auto;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-red);
+  padding: 10px 5px 10px 30px;
+}
+.sidebar-inner {
+}
+.logo {
+  margin-bottom: 20px;
+}
+.sidebar-nav-label {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.sidebar-nav {
+}
+.sidebar-nav-list {
+}
+.sidebar-nav-item {
+  background: var(--color-white);
+}
+.sidebar-nav-item a {
+  display: flex;
+  padding: 10px 5px;
+  position: relative;
+}
+.item-count {
+  position: absolute;
+  right: 30px;
+  color: var(--color-gray-dark);
+  font-weight: 400;
+}
+
+.sidebar-nav-item img {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.level-1 .level-2 {
+  display: none;
+}
+.level-1.open .level-2 {
+  display: block;
+}
+
+.level-1:has(.level-2).open > a {
+  background: var(--color-gray);
+  font-weight: 700;
+}
+.level-1 > a:hover {
+  background: var(--color-gray);
+}
+.level-1:has(.level-2) > a::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  border-left: 1px solid var(--color-black);
+  border-top: 1px solid var(--color-black);
+  transition: transform 0.3s;
+  transform: rotate(225deg);
+}
+.level-2 a {
+  padding-left: 20px;
+  background: var(--color-gray-light);
+}
+.level-2 a:hover {
+  color: var(--color-red);
+  background: var(--color-white);
+}
+.level-2 a:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  border-radius: 50%;
+  background: var(--color-gray-light);
+  width: 7px;
+  height: 7px;
+  transition: background 0.2s;
+}
+.level-2 a:hover::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  border-radius: 50%;
+  background: var(--color-red);
+  width: 7px;
+  height: 7px;
+}
+.level-2 a:hover .item-count {
+  color: var(--color-red);
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+}
+
+/* Common */
 .page-wrapper {
   height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* Sidebar */
-.sidebar {
-  min-width: 300px;
-  height: 100%;
-  background-color: var(--color-white);
-  border-right: 1px solid var(--color-red);
-}
-@media screen and (max-width: 1200px) {
-  .sidebar {
-    display: none;
-  }
-}
-
-/* UI */
 .main {
   height: 100%;
   -webkit-box-flex: 1;
@@ -123,10 +239,9 @@ select {
 }
 
 .container {
-  /* max-width: 1280px; */
-  /* margin-inline: auto; */
-  margin-inline: 20px;
-  /* padding-inline: 20px; */
+  margin-inline: auto;
+  max-width: 1280px;
+  padding-inline: 20px;
 }
 
 .button-primary {
@@ -153,6 +268,11 @@ select {
   /* flex-direction: row; */
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
 /* Header */
 .nav-container {
   display: flex;
@@ -162,7 +282,7 @@ select {
   background: var(--color-dark);
 }
 .nav-button {
-  padding-inline: 10px;
+  padding-inline: 20px;
   display: flex;
   align-items: center;
   width: auto;
@@ -171,7 +291,6 @@ select {
 }
 .nav-button a {
   color: var(--color-white);
-  text-decoration: none;
 }
 .nav-button a {
   display: flex;
@@ -187,10 +306,9 @@ select {
 .nav-city::before {
   content: url('/src/assets/img/icons/map-mark.svg');
   display: inline-block;
+  position: relative;
   height: 18px;
   width: 18px;
-  position: relative;
-  left: 2px;
 }
 .nav-city::after {
   content: '';
@@ -265,7 +383,7 @@ select {
 }
 .footer-top {
   display: flex;
-  margin-left: 300px;
+  margin-left: 400px;
   padding-top: 50px;
   padding-bottom: 20px;
   padding-inline: 10px 20px;
