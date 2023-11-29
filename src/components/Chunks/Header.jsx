@@ -37,21 +37,21 @@ const Header = () => {
         <div className='header-actions-container'>
           <div className='header-favourites'>
             <img
-              src='/src/assets/img/icons/heart.svg'
+              src='/public/img/icons/heart.svg'
               alt='Избранное'
               title='Избранное'
             ></img>
           </div>
           <div className='header-cart'>
             <img
-              src='./src/assets/img/icons/shopping-bag.svg'
+              src='public/img/icons/shopping-bag.svg'
               alt='Корзина'
               title='Корзина'
             />
           </div>
           <div className='header-profile'>
             <img
-              src='/src/assets/img/icons/user-square.svg'
+              src='img/icons/user-square.svg'
               alt='Профиль'
               title='Профиль'
             />
