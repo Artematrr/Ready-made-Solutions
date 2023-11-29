@@ -37,14 +37,14 @@ const Header = () => {
         <div className='header-actions-container'>
           <div className='header-favourites'>
             <img
-              src='/public/img/icons/heart.svg'
+              src='img/icons/heart.svg'
               alt='Избранное'
               title='Избранное'
             ></img>
           </div>
           <div className='header-cart'>
             <img
-              src='public/img/icons/shopping-bag.svg'
+              src='img/icons/shopping-bag.svg'
               alt='Корзина'
               title='Корзина'
             />
