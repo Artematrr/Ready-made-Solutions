@@ -224,7 +224,7 @@ const Sidebar = () => {
           </div>
           <form className='sidebar-form-inputs' action=''>
             <input type='text' id='name' placeholder='Ваше имя' />
-            <row>
+            <div className="row">
             <input
               type='tel'
               id='phone'
@@ -237,7 +237,7 @@ const Sidebar = () => {
               <option value='Строительство'>Строительство</option>
               <option value='Медицина'>Медицина</option>
             </select>
-            </row>
+            </div>
             <div className='sidebar-form-label-button'>
               Нажимая на кнопку, вы даёте согласие на обработку Персональных
               данных
