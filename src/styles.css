@@ -2,26 +2,18 @@
 
 @font-face {
   font-family: 'Circe';
-  src: url('/public/fonts/Circe/fonts/circe.eot'); /* IE 9 Compatibility Mode */
-  src: url('/public/fonts/circe.eot?#iefix') format('embedded-opentype'),
-    /* IE < 9 */ url('/public/fonts/circe.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('/public/fonts/circe.woff') format('woff'),
-    /* Firefox >= 3.6, any other modern browser */
-      url('/public/fonts/circe.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('/public/fonts/circe.svg#circe')
-      format('svg'); /* Chrome < 4, Legacy iOS */
+  src:url('fonts/Circe/fonts/circe.woff2') format('woff2'),
+      url('fonts/Circe/fonts/circe.woff') format('woff'),
+      url('fonts/Circe/fonts/circe.ttf') format('truetype'),
+      url('fonts/Circe/fonts/circe.svg#circe') format('svg'),
+      
 }
 @font-face {
   font-family: 'Circe Bold';
-  src: url('/public/fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
-  src: url('/public/fonts/circe_bold.eot?#iefix') format('embedded-opentype'),
-    /* IE < 9 */ url('/public/fonts/circe_bold.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('/public/fonts/circe_bold.woff')
-      format('woff'),
-    /* Firefox >= 3.6, any other modern browser */
-      url('/public/fonts/circe_bold.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('/public/fonts/circe_bold.svg#circe_bold')
-      format('svg'); /* Chrome < 4, Legacy iOS */
+  src:url('fonts/Circe/fonts/circe_bold.woff2') format('woff2'),
+      url('fonts/Circe/fonts/circe_bold.woff') format('woff'),
+      url('fonts/Circe/fonts/circe_bold.ttf') format('truetype'),
+      url('fonts/Circe/fonts/circe_bold.svg#circe_bold') format('svg');
 }
 
 /* Указываем box sizing */
@@ -54,8 +46,8 @@ dd {
 }
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  /* min-height: 100dvh; */
-  min-height: 100vh;
+  min-height: 100dvh;
+  /* min-height: 100vh; */
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   /* text-rendering: optimizeLegibility; */
@@ -66,8 +58,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
   min-width: 320px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* font-family: 'Circe'; */
+  font-family: 'Circe', 'Circe Bold', Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
 }
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
@@ -131,6 +123,10 @@ select {
 }
 
 /* Sidebar */
+.sidebar-wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
 .sidebar-wrapper {
   width: 400px;
   max-height: 100dvh;
@@ -145,7 +141,8 @@ select {
   margin-bottom: 20px;
 }
 .sidebar-nav-label {
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: 'Circe Bold';
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -187,7 +184,8 @@ select {
 
 .level-1:has(.level-2).open > a {
   background: var(--color-gray);
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: 'Circe Bold';
 }
 .level-1 > a:hover {
   background: var(--color-gray);
@@ -480,7 +478,8 @@ a {
 }
 
 .footer-tags-label {
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: 'Circe Bold';
 }
 .footer-tags-line {
   display: flex;
