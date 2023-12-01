@@ -4,12 +4,18 @@ import Header from '../components/Chunks/Header'
 const Product = () => {
   return (
     <>
-      <main className='main'>
+      <div className='container'>
+        <Header />
+        <main className='main'>
+          <Breadcrumbs />
+        </main>
+      </div>
+      {/* <main className='main'>
         <Header />
         <div className='container'>
           <Breadcrumbs />
         </div>
-      </main>
+      </main> */}
     </>
   )
 }
