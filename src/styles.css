@@ -2,18 +2,17 @@
 
 @font-face {
   font-family: 'Circe';
-  src:url('fonts/Circe/fonts/circe.woff2') format('woff2'),
-      url('fonts/Circe/fonts/circe.woff') format('woff'),
-      url('fonts/Circe/fonts/circe.ttf') format('truetype'),
-      url('fonts/Circe/fonts/circe.svg#circe') format('svg'),
-      
+  src:url('/public/fonts/Circe/fonts/circe.woff2') format('woff2'),
+      url('/public/fonts/Circe/fonts/circe.woff') format('woff'),
+      url('/public/fonts/Circe/fonts/circe.ttf') format('truetype'),
+      url('/public/fonts/Circe/fonts/circe.svg#circe') format('svg');
 }
 @font-face {
   font-family: 'Circe Bold';
-  src:url('fonts/Circe/fonts/circe_bold.woff2') format('woff2'),
-      url('fonts/Circe/fonts/circe_bold.woff') format('woff'),
-      url('fonts/Circe/fonts/circe_bold.ttf') format('truetype'),
-      url('fonts/Circe/fonts/circe_bold.svg#circe_bold') format('svg');
+  src:url('/public/fonts/Circe/fonts/circe_bold.woff2') format('woff2'),
+      url('/public/fonts/Circe/fonts/circe_bold.woff') format('woff'),
+      url('/public/fonts/Circe/fonts/circe_bold.ttf') format('truetype'),
+      url('/public/fonts/Circe/fonts/circe_bold.svg#circe_bold') format('svg');
 }
 
 /* Указываем box sizing */
@@ -142,7 +141,8 @@ select {
 }
 .sidebar-nav-label {
   /* font-weight: 700; */
-  font-family: 'Circe Bold';
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -185,7 +185,8 @@ select {
 .level-1:has(.level-2).open > a {
   background: var(--color-gray);
   /* font-weight: 700; */
-  font-family: 'Circe Bold';
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
 }
 .level-1 > a:hover {
   background: var(--color-gray);
@@ -479,7 +480,8 @@ a {
 
 .footer-tags-label {
   /* font-weight: 700; */
-  font-family: 'Circe Bold';
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
 }
 .footer-tags-line {
   display: flex;
