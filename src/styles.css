@@ -1,4 +1,28 @@
-@import url(/src/assets/fonts/Circe/circe.css);
+/* @import url(/public/fonts/Circe/circe.css); */
+
+@font-face {
+  font-family: 'Circe';
+  src: url('/public/fonts/Circe/fonts/circe.eot'); /* IE 9 Compatibility Mode */
+  src: url('/public/fonts/circe.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('/public/fonts/circe.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/public/fonts/circe.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('/public/fonts/circe.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/public/fonts/circe.svg#circe')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: 'Circe Bold';
+  src: url('/public/fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('/public/fonts/circe_bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('/public/fonts/circe_bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/public/fonts/circe_bold.woff')
+      format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('/public/fonts/circe_bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/public/fonts/circe_bold.svg#circe_bold')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+}
 
 /* Указываем box sizing */
 *,
@@ -43,6 +67,7 @@ body {
   font-weight: 400;
   min-width: 320px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Circe'; */
 }
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
@@ -135,6 +160,10 @@ select {
   display: flex;
   padding: 10px 5px;
   position: relative;
+  align-items: center;
+}
+.sidebar-nav-item a span {
+  max-width: 250px;
 }
 .item-count {
   position: absolute;
@@ -146,6 +175,8 @@ select {
 .sidebar-nav-item img {
   margin-right: 10px;
   margin-left: 5px;
+  width: 24px;
+  height: 24px;
 }
 .level-1 .level-2 {
   display: none;
@@ -328,7 +359,7 @@ a {
 }
 
 .nav-phone::after {
-  content: url('/src/assets/img/icons/WhatsApp.svg');
+  content: url('/public/img/icons/WhatsApp.svg');
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -354,7 +385,7 @@ a {
   border-radius: 5px;
 }
 .search-container::before {
-  content: url('/src/assets/img/icons/search-normal.svg');
+  content: url('/public/img/icons/search-normal.svg');
   display: inline-block;
   height: 24px;
   width: 24px;
@@ -409,7 +440,7 @@ a {
 }
 
 .footer .phone::before {
-  content: url('/src/assets/img/icons/call.svg');
+  content: url('/public/img/icons/call.svg');
   display: inline-block;
   position: relative;
   top: 5px;
@@ -417,7 +448,7 @@ a {
   width: 20px;
 }
 .footer .email::before {
-  content: url('/src/assets/img/icons/sms.svg');
+  content: url('/public/img/icons/sms.svg');
   display: inline-block;
   position: relative;
   top: 5px;
@@ -428,7 +459,7 @@ a {
   padding-left: 10px;
 }
 .get-collection::before {
-  content: url('/src/assets/img/icons/Notes.svg');
+  content: url('/public/img/icons/Notes.svg');
   display: inline-block;
   position: relative;
   top: -1px;
@@ -437,7 +468,7 @@ a {
   width: 20px;
 }
 .get-recall::before {
-  content: url('/src/assets/img/icons/Outgoing\ Call\ Rounded.svg');
+  content: url('/public/img/icons/Outgoing\ Call\ Rounded.svg');
   display: inline-block;
   position: relative;
   left: -10px;
