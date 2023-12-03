@@ -115,11 +115,14 @@ select {
 
 /* Sidebar */
 .sidebar-wrapper::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
   height: 5px;
 }
+.sidebar-wrapper::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
 .sidebar-wrapper {
-  width: 400px;
+  width: 350px;
   max-height: 100dvh;
   overflow-y: auto;
   background-color: var(--color-white);
@@ -127,6 +130,7 @@ select {
   padding: 10px 5px 10px 30px;
 }
 .sidebar-inner {
+  /* overflow-x: hidden; */
 }
 .logo {
   margin-bottom: 20px;
@@ -235,8 +239,8 @@ select {
 .sidebar-form-container {
   background: var(--color-gray-lightest);
   min-height: 540px;
-  width: 350px;
-  padding: 30px 20px;
+  width: 300px;
+  padding: 30px 10px;
   margin-block: 20px;
   display: flex;
   flex-direction: column;
@@ -246,7 +250,7 @@ select {
   border-radius: 5px;
 }
 .sidebar-form-title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.2;
   text-transform: uppercase;
   /* font-weight: 700; */
@@ -256,9 +260,9 @@ select {
 }
 .sidebar-form-img {
 }
-.sidebar-form-label,.sidebar-form-label-button {
+.sidebar-form-label {
   line-height: 1;
-  margin-block:10px;
+  margin-block: 10px;
 }
 .sidebar-form-inputs {
   display: flex;
@@ -267,7 +271,8 @@ select {
   gap: 10px;
 }
 .sidebar-form-inputs .row {
-  gap: 10px;
+  /* gap: 10px; */
+  justify-content: space-between;
 }
 
 .sidebar-form-inputs input,
@@ -284,15 +289,16 @@ select {
 }
 .sidebar-form-inputs #phone,
 .sidebar-form-inputs #area {
-  width: 140px;
-  min-width: 150px;
+  width: 48%;
   height: 30px;
 }
 .sidebar-form-label-button {
   color: var(--color-gray-dark);
   font-size: 10px;
+  line-height: 1;
 }
 .sidebar-form-button {
+  border: none;
 }
 
 .sidebar-tags {
@@ -338,8 +344,7 @@ select {
 }
 
 .container {
-  
-    height: 100%;
+  height: 100%;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -486,17 +491,17 @@ a {
 }
 .footer-top {
   display: flex;
-  margin-left: 400px;
+  margin-left: 350px;
+  padding-inline: 5px 10px;
   padding-top: 50px;
   padding-bottom: 20px;
-  padding-inline: 10px 20px;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 .footer .col-one {
   display: flex;
   flex-direction: column;
-  /* width: 40%; */
+  min-width: 33%;
   max-width: 460px;
 }
 .footer .col-two {
@@ -508,7 +513,7 @@ a {
 .footer .row {
   margin-bottom: 15px;
   row-gap: 10px;
-  column-gap: 20px;
+  column-gap: 15px;
 }
 
 .footer .phone::before {
