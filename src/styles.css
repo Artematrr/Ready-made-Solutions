@@ -183,6 +183,17 @@ h1 {
 .section {
   padding-bottom: 15px;
 }
+i {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+i.heart-full {
+  content: url('/public/img/icons/heart-full.svg');
+}
+i.heart-empty {
+  content: url('/public/img/icons/heart-empty.svg');
+}
 
 /* Sidebar */
 .sidebar-wrapper::-webkit-scrollbar {
@@ -248,7 +259,7 @@ h1 {
 .level-1 .level-2 {
   display: none;
 }
-.level-1.open .level-2 {
+.level-1:has(> a.open) .level-2 {
   display: block;
 }
 
@@ -768,12 +779,16 @@ h1 {
   height: 320px;
   overflow-y: auto;
 }
+.card-image:hover {
+  /* width: 100%; */
+  /* transition: 0.2 all ease; */
+}
 .card-image::-webkit-scrollbar {
   width: 4px;
 }
 .card-detail {
   display: flex;
-  padding: 0px 15px;
+  padding: 10px 15px;
   flex-direction: column;
   align-items: flex-start;
   /* gap: 15px; */
@@ -781,6 +796,8 @@ h1 {
   border-top: 1px solid var(--color-gray-light);
   padding-top: 15px;
   margin-block: 15px;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 .card-top {
   width: 100%;
@@ -808,17 +825,30 @@ h1 {
   height: 24px;
   width: 24px;
 }
+.card-favourites i:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
 .card-price {
   gap: 10px;
-}
-.card-price:has(> .price-old) .price-new {
-  color: var(--color-red);
 }
 .price-new {
   color: var(--color-black);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-size: 24px;
+}
+.price-new::before{
+  content: url('/public/img/icons/wallet-outline.svg');
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  right: 5px;
+  height: 18px;
+  width: 18px; 
+}
+.card-price:has(> .price-old) .price-new {
+  color: var(--color-red);
 }
 .price-old {
   color: var(--color-dark);
@@ -830,14 +860,14 @@ h1 {
 .card-bottom > .row {
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 .card-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 10px;
-  align-self: stretch;
 }
 .card-buttons a {
   border-radius: 5px;
@@ -846,10 +876,29 @@ h1 {
 .button-buy a {
   color: var(--color-red);
   background: var(--color-gray-light);
+  position: relative;
+}
+.button-buy a::before {
+  content: url('/public/img/icons/shopping-bag-red.svg');
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  left: -5px;
+  width: 24px;
+  height: 24px;
 }
 .button-buy a:hover {
   color: var(--color-white);
   background: var(--color-red);
+}
+.button-buy a:hover:before {
+  content: url('/public/img/icons/shopping-bag-white.svg');
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  left: -5px;
+  width: 24px;
+  height: 24px;
 }
 .button-demo a {
   color: var(--color-white);

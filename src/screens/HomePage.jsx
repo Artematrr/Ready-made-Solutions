@@ -41,16 +41,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-full'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа </div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -84,16 +79,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-empty'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа</div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -126,16 +116,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-empty'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа</div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -169,16 +154,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-empty'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа</div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -212,16 +192,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-empty'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа</div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -255,16 +230,11 @@ const HomePage = () => {
                 <div className='row'>
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
-                    <img
-                      src='img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
+                    <i className='heart-empty'></i>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
+                  <div className='card-title'>Студия татуажа</div>
                 </div>
               </div>
               <div className='card-bottom'>
@@ -289,8 +259,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-        
         </div>
       </div>
 
