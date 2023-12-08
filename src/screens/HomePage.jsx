@@ -42,7 +42,7 @@ const HomePage = () => {
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
                     <img
-                      src='/public/img/icons/heart-full.svg'
+                      src='img/icons/heart-full.svg'
                       alt='favourites'
                     />
                   </div>
@@ -77,7 +77,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='/public/img/product-2.png' alt='product-2' />
+              <img src='img/product-2.png' alt='product-2' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -85,7 +85,49 @@ const HomePage = () => {
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
                     <img
-                      src='/public/img/icons/heart-full.svg'
+                      src='img/icons/heart-full.svg'
+                      alt='favourites'
+                    />
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='card-title'>
+                  Студия татуажа
+                  </div>
+                </div>
+              </div>
+              <div className='card-bottom'>
+                <div className='row'>
+                  <div className='card-article'>Арт. L-023</div>
+                  <div className='card-price row'>
+                    <div className='price-new'>12500 руб.</div>
+                  </div>
+                </div>
+                <div className='card-buttons'>
+                  <div className='button-buy'>
+                    <a href='#'>Купить</a>
+                  </div>
+                  <div className='button-demo'>
+                    <a href='#'>Демо</a>
+                  </div>
+                  <div className='button-about'>
+                    <a href='#'>Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='product-card'>
+            <div className='card-image'>
+              <img src='img/product-3.png' alt='product-3' />
+            </div>
+            <div className='card-detail'>
+              <div className='card-top'>
+                <div className='row'>
+                  <div className='card-tag'>#Лендинги</div>
+                  <div className='card-favourites'>
+                    <img
+                      src='img/icons/heart-full.svg'
                       alt='favourites'
                     />
                   </div>
@@ -120,7 +162,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='/public/img/product-3.png' alt='product-3' />
+              <img src='img/product-4.png' alt='product-4' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -128,50 +170,7 @@ const HomePage = () => {
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
                     <img
-                      src='/public/img/icons/heart-full.svg'
-                      alt='favourites'
-                    />
-                  </div>
-                </div>
-                <div className='row'>
-                  <div className='card-title'>
-                  Студия татуажа
-                  </div>
-                </div>
-              </div>
-              <div className='card-bottom'>
-                <div className='row'>
-                  <div className='card-article'>Арт. L-023</div>
-                  <div className='card-price row'>
-                    <div className='price-new'>12500 руб.</div>
-                    <div className='price-old'>14500 руб.</div>
-                  </div>
-                </div>
-                <div className='card-buttons'>
-                  <div className='button-buy'>
-                    <a href='#'>Купить</a>
-                  </div>
-                  <div className='button-demo'>
-                    <a href='#'>Демо</a>
-                  </div>
-                  <div className='button-about'>
-                    <a href='#'>Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='product-card'>
-            <div className='card-image'>
-              <img src='/public/img/product-4.png' alt='product-4' />
-            </div>
-            <div className='card-detail'>
-              <div className='card-top'>
-                <div className='row'>
-                  <div className='card-tag'>#Лендинги</div>
-                  <div className='card-favourites'>
-                    <img
-                      src='/public/img/icons/heart-full.svg'
+                      src='img/icons/heart-full.svg'
                       alt='favourites'
                     />
                   </div>
