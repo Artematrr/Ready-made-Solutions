@@ -34,7 +34,7 @@ const HomePage = () => {
         <div className='product-cards-wrapper'>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='/public/img/product-1.png' alt='product-1' />
+              <img src='img/product-1.png' alt='product-1' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -206,7 +206,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='/public/img/product-5.png' alt='product-5' />
+              <img src='img/product-5.png' alt='product-5' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -214,7 +214,7 @@ const HomePage = () => {
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
                     <img
-                      src='/public/img/icons/heart-full.svg'
+                      src='img/icons/heart-full.svg'
                       alt='favourites'
                     />
                   </div>
@@ -249,7 +249,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='/public/img/product-6.png' alt='product-6' />
+              <img src='img/product-6.png' alt='product-6' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -257,7 +257,7 @@ const HomePage = () => {
                   <div className='card-tag'>#Лендинги</div>
                   <div className='card-favourites'>
                     <img
-                      src='/public/img/icons/heart-full.svg'
+                      src='img/icons/heart-full.svg'
                       alt='favourites'
                     />
                   </div>
