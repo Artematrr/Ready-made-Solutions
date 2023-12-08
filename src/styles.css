@@ -755,7 +755,7 @@ h1 {
   box-shadow: 5px 10px 10px var(--color-gray-light);
   border-radius: 5px;
   overflow: hidden;
-  max-width: 400px;
+  width: 400px;
   justify-content: space-between;
 }
 .product-card:hover {
@@ -811,8 +811,11 @@ h1 {
 .card-price {
   gap: 10px;
 }
+.card-price:has(> .price-old) .price-new {
+  color: var(--color-red);
+}
 .price-new {
-  color: var(--Style, #a20000);
+  color: var(--color-black);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-size: 24px;
