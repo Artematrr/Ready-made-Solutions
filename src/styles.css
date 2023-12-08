@@ -263,7 +263,7 @@ i.heart-empty {
   display: block;
 }
 
-.level-1:has(.level-2).open > a {
+.level-1:has(.level-2) > a.open {
   background: var(--color-gray);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
@@ -825,7 +825,7 @@ i.heart-empty {
   height: 24px;
   width: 24px;
 }
-.card-favourites i:hover{
+.card-favourites i:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -838,14 +838,14 @@ i.heart-empty {
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-size: 24px;
 }
-.price-new::before{
+.price-new::before {
   content: url('/public/img/icons/wallet-outline.svg');
   display: inline-block;
   position: relative;
   top: 2px;
   right: 5px;
   height: 18px;
-  width: 18px; 
+  width: 18px;
 }
 .card-price:has(> .price-old) .price-new {
   color: var(--color-red);
