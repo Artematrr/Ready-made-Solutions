@@ -172,6 +172,13 @@ a {
   text-decoration: none;
   color: var(--color-black);
 }
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+  line-height: 42.5px;
+  text-transform: uppercase;
+}
 
 .section {
   padding-bottom: 15px;
@@ -192,6 +199,9 @@ a {
   background-color: var(--color-white);
   border-right: 1px solid var(--color-red);
   padding: 10px 5px 10px 30px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
 }
 .sidebar-inner {
 }
