@@ -1,8 +1,5 @@
-
 const Breadcrumbs = () => {
-	return (
-		<div>Breadcrumbs</div>
-	)
+  return <div>{'Homepage > Prodcut_1 > View'}</div>
 }
 
 export default Breadcrumbs
