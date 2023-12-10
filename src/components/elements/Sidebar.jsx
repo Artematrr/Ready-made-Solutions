@@ -3,7 +3,7 @@ const Sidebar = () => {
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
         <div className='logo'>
-          <img src='img/logo.svg' alt='Готовые Решения' />
+          <img loading='lazy' src='img/logo.svg' alt='Готовые Решения' />
         </div>
         <div className='sidebar-nav-label'>Каталог сайтов</div>
         <div className='sidebar-nav'>
@@ -11,6 +11,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-universal.svg'
                   alt='Универсальный дизайн'
                 />
@@ -20,7 +21,11 @@ const Sidebar = () => {
             </li>
             <li className='sidebar-nav-item level-1 open'>
               <a href='#'>
-                <img src='img/icons/item-food.svg' alt='Еда, напитки' />
+                <img
+                  loading='lazy'
+                  src='img/icons/item-food.svg'
+                  alt='Еда, напитки'
+                />
                 <span>Еда, напитки</span>
                 <span className='item-count'>100</span>
               </a>
@@ -84,6 +89,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-medicine.svg'
                   alt='Медицина, красота, здоровье'
                 />
@@ -114,6 +120,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-build.svg'
                   alt='Строительство, ремонт'
                 />
@@ -123,7 +130,11 @@ const Sidebar = () => {
             </li>
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
-                <img src='img/icons/item-services.svg' alt='Услугм' />
+                <img
+                  loading='lazy'
+                  src='img/icons/item-services.svg'
+                  alt='Услугм'
+                />
                 <span>Услугм</span>
                 <span className='item-count'>100</span>
               </a>
@@ -131,6 +142,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-education.svg'
                   alt='Образование, курсы, сми'
                 />
@@ -141,6 +153,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-transport.svg'
                   alt='Транспорт, спецтехника'
                 />
@@ -151,6 +164,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-electronic.svg'
                   alt='Электроника, бытовое оборудование'
                 />
@@ -215,6 +229,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-entertainment.svg'
                   alt='Досуг, развлечения, искусство'
                 />
@@ -225,6 +240,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-sport.svg'
                   alt='Транспорт, спецтехника'
                 />
@@ -235,6 +251,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-society.svg'
                   alt='Государство и общество'
                 />
@@ -244,14 +261,22 @@ const Sidebar = () => {
             </li>
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
-                <img src='img/icons/item-lendings.svg' alt='Лендинги' />
+                <img
+                  loading='lazy'
+                  src='img/icons/item-lendings.svg'
+                  alt='Лендинги'
+                />
                 <span> Лендинги</span>
                 <span className='item-count'>100</span>
               </a>
             </li>
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
-                <img src='img/icons/item-e-shop.svg' alt='Интернет-магазины' />
+                <img
+                  loading='lazy'
+                  src='img/icons/item-e-shop.svg'
+                  alt='Интернет-магазины'
+                />
                 <span> Интернет-магазины</span>
                 <span className='item-count'>100</span>
               </a>
@@ -259,6 +284,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-business-card.svg'
                   alt='Сайты визитки'
                 />
@@ -269,6 +295,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-corporate.svg'
                   alt='Корпоративные сайты'
                 />
@@ -279,6 +306,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-single-page.svg'
                   alt='Одностраничные сайты'
                 />
@@ -289,6 +317,7 @@ const Sidebar = () => {
             <li className='sidebar-nav-item level-1'>
               <a href='#'>
                 <img
+                  loading='lazy'
                   src='img/icons/item-announcement.svg'
                   alt='Сайты объявлений'
                 />
@@ -303,7 +332,11 @@ const Sidebar = () => {
             Не знаете, какое готовое решение вам подойдёт?
           </div>
           <div className='sidebar-form-img'>
-            <img src='img/sidebar-form-image.svg' alt='sidebar-form-image' />
+            <img
+              loading='lazy'
+              src='img/sidebar-form-image.svg'
+              alt='sidebar-form-image'
+            />
           </div>
           <div className='sidebar-form-label'>
             Заполните форму и мы поможем Вам подобрать оптимальное решение

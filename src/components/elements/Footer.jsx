@@ -4,7 +4,11 @@ const Footer = () => {
       <div className='footer-top'>
         <div className='col-one'>
           <div className='row'>
-            <img src='img/logo-light.svg' alt='Готовые решения' />
+            <img
+              loading='lazy'
+              src='img/logo-light.svg'
+              alt='Готовые решения'
+            />
           </div>
           <div className='row'>
             <div className='phone'>+7 926 256-57-56</div>
@@ -45,13 +49,11 @@ const Footer = () => {
             <a href='#'>Технический аудит</a>
             <a href='#'>Анилиз рынка</a>
           </div>
-          <div className="row">
-          <p>ИНН 770370050803 </p>
-          <p>ОГРНИП 315774600171129 </p>
+          <div className='row'>
+            <p>ИНН 770370050803 </p>
+            <p>ОГРНИП 315774600171129 </p>
+          </div>
         </div>
-        </div>
-
-       
       </div>
       <div className='footer-bottom'>
         <p> © 2023. Agelar. Все права защищены.</p>

@@ -54,6 +54,7 @@ const Header = () => {
         <div className='header-actions-container'>
           <div className='header-favourites'>
             <img
+              loading='lazy'
               src='img/icons/heart.svg'
               alt='Избранное'
               title='Избранное'
@@ -62,6 +63,7 @@ const Header = () => {
           </div>
           <div className='header-cart'>
             <img
+              loading='lazy'
               src='img/icons/shopping-bag.svg'
               alt='Корзина'
               title='Корзина'
@@ -70,6 +72,7 @@ const Header = () => {
           </div>
           <div className='header-profile'>
             <img
+              loading='lazy'
               src='img/icons/user-square.svg'
               alt='Профиль'
               title='Профиль'
