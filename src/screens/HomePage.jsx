@@ -38,7 +38,7 @@ const HomePage = () => {
         <div className='product-cards-wrapper'>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-1.png' alt='product-1' />
+              <img loading='lazy' src='img/product-1.png' alt='product-1' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -76,7 +76,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-2.png' alt='product-2' />
+              <img loading='lazy' src='img/product-2.png' alt='product-2' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -113,7 +113,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-3.png' alt='product-3' />
+              <img loading='lazy' src='img/product-3.png' alt='product-3' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -152,7 +152,7 @@ const HomePage = () => {
 
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-4.png' alt='product-4' />
+              <img loading='lazy' src='img/product-4.png' alt='product-4' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -190,7 +190,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-5.png' alt='product-5' />
+              <img loading='lazy' src='img/product-5.png' alt='product-5' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -228,7 +228,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-6.png' alt='product-6' />
+              <img loading='lazy' src='img/product-6.png' alt='product-6' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -267,13 +267,13 @@ const HomePage = () => {
 
           <div className='banner'>
             <a href='#'>
-              <img src='/img/banner.png' alt='' />
+              <img loading='lazy' src='/img/banner.png' alt='' />
             </a>
           </div>
 
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-1.png' alt='product-1' />
+              <img loading='lazy' src='img/product-1.png' alt='product-1' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -311,7 +311,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-2.png' alt='product-2' />
+              <img loading='lazy' src='img/product-2.png' alt='product-2' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -348,7 +348,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-3.png' alt='product-3' />
+              <img loading='lazy' src='img/product-3.png' alt='product-3' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -387,7 +387,7 @@ const HomePage = () => {
 
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-4.png' alt='product-4' />
+              <img loading='lazy' src='img/product-4.png' alt='product-4' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -425,7 +425,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-5.png' alt='product-5' />
+              <img loading='lazy' src='img/product-5.png' alt='product-5' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -463,7 +463,7 @@ const HomePage = () => {
           </div>
           <div className='product-card'>
             <div className='card-image'>
-              <img src='img/product-6.png' alt='product-6' />
+              <img loading='lazy' src='img/product-6.png' alt='product-6' />
             </div>
             <div className='card-detail'>
               <div className='card-top'>
@@ -502,28 +502,88 @@ const HomePage = () => {
         </div>
         <div className='product-pagination-container'>
           <div className='product-pagination'>
-            <a href='#'>Назад</a>
+            <a href='#' className='pagination-arrow-back'></a>
             <a href='#'>1</a>
             <a href='#'>2</a>
             <a href='#'>3</a>
             <a href='#'>4</a>
             <span>...</span>
-
             <a href='#'>10</a>
             <a href='#'>11</a>
-
-            <a href='#'>Вперёд</a>
+            <a href='#' className='pagination-arrow-forward'>
+              Вперёд
+            </a>
           </div>
         </div>
       </div>
 
-      {/* <div className='section'>Форма из сайдбара</div>
-      <div className='section'>Преимущества</div>
-      <div className='section'>Сайты на наших решениях</div>
-      <div className='section'>Дополнительные услуги</div>
-      <div className='section'>Отзывы</div>
-      <div className='section'>Вопрос-ответ</div>
-      <div className='section'>Полезные советы</div> */}
+      <div className='section'>
+        <div className='sidebar-form-container'>
+          <div className='col-one'>
+            <div className='sidebar-form-title'>
+              Не знаете, какое готовое решение вам подойдёт?
+            </div>
+
+            <div className='sidebar-form-label'>
+              Заполните форму и мы поможем Вам подобрать оптимальное решение
+            </div>
+            <form className='sidebar-form-inputs' action=''>
+              <input type='text' id='name' placeholder='Ваше имя' />
+              <div className='row'>
+                <input
+                  type='tel'
+                  id='phone'
+                  pattern='\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}'
+                  placeholder='+7 (_ _ _) _ _ _ - _ _ - _ _'
+                />
+                <select id='area'>
+                  Сфера деятельности
+                  <option value='0'>Сфера деятельности</option>
+                  <option value='Строительство'>Строительство</option>
+                  <option value='Медицина'>Медицина</option>
+                </select>
+              </div>
+              <div className='sidebar-form-label-button'>
+                Нажимая на кнопку, вы даёте согласие на обработку Персональных
+                данных
+              </div>
+
+              <button className='sidebar-form-button button-primary'>
+                Получить предложение
+              </button>
+            </form>
+          </div>
+
+          <div className='col-two'>
+            <div className='sidebar-form-img'>
+              <img
+                loading='lazy'
+                src='img/form-image.svg'
+                alt='sidebar-form-image'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='section'>
+        <h1>Почему выгодно использовать наши готовые разработки?</h1>
+      </div>
+      <div className='section'>
+        <h1>Сайты на наших решениях</h1>
+      </div>
+      <div className='section'>
+        <h1>Дополнительные услуги</h1>
+      </div>
+      <div className='section'>
+        <h1>Отзывы клиентов о готовых решениях</h1>
+      </div>
+      <div className='section'>
+        <h1>Вопрос - ответ</h1>
+      </div>
+      <div className='section'>
+        <h1>Полезные советы</h1>
+      </div>
     </main>
   )
 }
