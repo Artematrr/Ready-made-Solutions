@@ -149,7 +149,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
           <div className='product-card'>
             <div className='card-image'>
               <img loading='lazy' src='img/product-4.png' alt='product-4' />
@@ -264,13 +263,15 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className='banner'>
-            <a href='#'>
-              <img loading='lazy' src='/img/banner.png' alt='' />
-            </a>
-          </div>
+        <div className='banner'>
+          <a href='#'>
+            <img loading='lazy' src='/img/banner.png' alt='' />
+          </a>
+        </div>
 
+        <div className='product-cards-wrapper'>
           <div className='product-card'>
             <div className='card-image'>
               <img loading='lazy' src='img/product-1.png' alt='product-1' />
@@ -384,7 +385,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
           <div className='product-card'>
             <div className='card-image'>
               <img loading='lazy' src='img/product-4.png' alt='product-4' />
@@ -568,9 +568,127 @@ const HomePage = () => {
 
       <div className='section'>
         <h1>Почему выгодно использовать наши готовые разработки?</h1>
+        <div className='avantages-wrapper'>
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-1.svg'
+                alt='Дешевле в 10-15 раз!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>Дешевле в 10-15 раз!</div>
+              <div className='avantages-item-text'>
+                В среднем разработка корпоративного сайта такого же уровня как
+                наши готовые решения стоит на рынке 100 000 - 150 000 рублей.
+                Наши сайты стоят 7900 - 15 900 рублей. Разница в расходах
+                колоссальная, средняя экономия бюджета - 90-95%.
+              </div>
+            </div>
+          </div>
+
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-2.svg'
+                alt='Это легко и просто!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>Это легко и просто!</div>
+              <div className='avantages-item-text'>
+                Наши готовые сайты разработаны на Modex. Редактировать текстовый
+                и графический контент сайта можно в админ-панели без знаний
+                программного кода. С этим справится любой пользователь ПК.
+              </div>
+            </div>
+          </div>
+
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-3.svg'
+                alt='Подходят для SEO и рекламы!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>
+                Подходят для SEO и рекламы!
+              </div>
+              <div className='avantages-item-text'>
+                Готовые сайты имеют продуманную структуру, оптимизированы и
+                хорошо продвигаются в поиске, адаптированы под все устройства и
+                имеют высокую конверсию 5-10%. Продаются полностью заполненными
+                с уникальными текстами.
+              </div>
+            </div>
+          </div>
+
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-4.svg'
+                alt='Быстрее в 20 раз!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>Быстрее в 20 раз!</div>
+              <div className='avantages-item-text'>
+                Разработка сайта с нуля занимает не менее 60 дней. Наши готовые
+                сайты покупатели запускают за 3 дня. Есть даже те, кто запускает
+                за 1 день, так как наши готовые решения максимально
+                оптимизированы для этого.
+              </div>
+            </div>
+          </div>
+
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-5.svg'
+                alt='Функционал и гибкость!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>Функционал и гибкость!</div>
+              <div className='avantages-item-text'>
+                Возможности готового решения покрывают все потребности владельца
+                корпоративного сайта в 95% случаев. А гибкость CMS позволяет
+                доработать сайт под абсолютно любые нужды не более, чем за 10
+                рабочих часов junior-программиста.
+              </div>
+            </div>
+          </div>
+
+          <div className='avantages-item'>
+            <div className='avantages-item-img'>
+              <img
+                loading='lazy'
+                src='img/icons/advantage-6.svg'
+                alt='Бесплатные в обслуживании!'
+              />
+            </div>
+            <div className='avantages-item-decsription'>
+              <div className='avantages-item-title'>
+                Бесплатные в обслуживании!
+              </div>
+              <div className='avantages-item-text'>
+                В отличие от других сервисов и систем управления сайтами, наши
+                готовые решения не имеют расходов на оплату лицензий, платформ и
+                доступов. Никаких затрат, кроме покупки личного домена и
+                хостинга не требуется!
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='section'>
-        <h1>Сайты на наших решениях</h1>
+        <h1>Сайты созданные на наших решениях</h1>
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
