@@ -357,6 +357,7 @@ i.heart-empty {
   margin-bottom: 10px;
 }
 .sidebar-form-img {
+  max-width: 400px;
 }
 .sidebar-form-label {
   line-height: 1;
@@ -369,11 +370,11 @@ i.heart-empty {
   gap: 10px;
 }
 .sidebar-form-inputs .row {
-      /* gap: 10px; */
-      justify-content: space-between;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+  /* gap: 10px; */
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sidebar-form-inputs input,
@@ -406,23 +407,36 @@ i.heart-empty {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  justify-content: space-between;
+  padding-inline: 20px;
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: space-around;
+  text-align: left;
 }
 .main .sidebar-form-container .col-one {
-  width: 50%;
+  width: 60%;
+  max-width: 600px;
 }
 .main .sidebar-form-container .col-two {
   display: flex;
-  width: 40%;
+  width: 35%;
+  max-width: 450px;
+
   justify-content: center;
   align-items: center;
+}
+.main .sidebar-form-inputs {
+  align-items: flex-start;
+}
+.main .sidebar-form-label-button {
+  font-size: 14px;
 }
 @media screen and (max-width: 480px) {
   .main .sidebar-form-container {
     flex-direction: column-reverse;
   }
-  .main .sidebar-form-container .col-one, .main .sidebar-form-container .col-two {
+  .main .sidebar-form-container .col-one,
+  .main .sidebar-form-container .col-two {
     width: 100%;
   }
 }
@@ -804,9 +818,10 @@ i.heart-empty {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 13px;
+  column-gap: 30px;
   row-gap: 30px;
-  justify-content: space-around;
+  justify-content: space-between;
+
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr; */
 }
@@ -819,8 +834,9 @@ i.heart-empty {
   background: var(--color-white);
   border-radius: 5px;
   overflow: hidden;
-  width: 440px;
+  width: 420px;
   justify-content: space-between;
+  flex-grow: 1;
 }
 .product-card:hover {
   border: 1px solid var(--color-red);
@@ -831,6 +847,9 @@ i.heart-empty {
   margin-top: 5px;
   height: 320px;
   overflow-y: auto;
+}
+.card-image img {
+  margin-inline: auto;
 }
 .card-image:hover {
   /* width: 100%; */
@@ -974,8 +993,10 @@ i.heart-empty {
   text-decoration: underline;
   border: 1px solid var(--color-red);
 }
+
 .banner {
   padding-block: 20px;
+  width: 100%;
 }
 
 .product-pagination-container {
@@ -1016,19 +1037,74 @@ i.heart-empty {
 .product-pagination .pagination-arrow-forward:hover {
   background: var(--color-white);
 }
-/* .product-pagination .pagination-arrow-back,
-.product-pagination .pagination-arrow-forward {
-padding-inline: 0px;
+
+.avantages-wrapper {
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.product-pagination .pagination-arrow-back::before,
-.product-pagination .pagination-arrow-forward::before {
-  content: url('/public/img/icons/arrow-back.svg');
-  width: 24px;
-  height: 24px;
+.avantages-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px 20px;
+  column-gap: 10px;
 }
-.product-pagination .pagination-arrow-forward::before {
-  content: url('/public/img/icons/arrow-forward.svg');
-} */
+.avantages-item-img {
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+.avantages-item-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--color-gray-light),
+    var(--color-white)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.avantages-item-decsription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* align-items: flex-start; */
+  row-gap: 5px;
+}
+.avantages-item-title {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+  line-height: 25px;
+}
+.avantages-item-text {
+  line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+  .avantages-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .avantages-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /* Productpage */
 
 /* Preset */
