@@ -1082,16 +1082,17 @@ i.heart-empty {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* align-items: flex-start; */
   row-gap: 5px;
 }
 .avantages-item-title {
+  color: var(--color-dark);
   font-size: 17px;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
   line-height: 25px;
 }
 .avantages-item-text {
+  color: var(--color-dark);
   line-height: 20px;
 }
 @media screen and (max-width: 768px) {
