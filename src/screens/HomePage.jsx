@@ -267,7 +267,11 @@ const HomePage = () => {
 
         <div className='banner'>
           <a href='#'>
-            <img loading='lazy' src='/img/banner.png' alt='' />
+            <img
+              loading='lazy'
+              src='/img/banner.png'
+              alt='Акция! При заказе 2-х и более сайтов скидка 20%'
+            />
           </a>
         </div>
 
@@ -506,12 +510,10 @@ const HomePage = () => {
             <a href='#'>1</a>
             <a href='#'>2</a>
             <a href='#'>3</a>
-            <a href='#'>4</a>
             <span>...</span>
             <a href='#'>10</a>
             <a href='#'>11</a>
             <a href='#' className='pagination-arrow-forward'>
-              Вперёд
             </a>
           </div>
         </div>
@@ -687,8 +689,35 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      
       <div className='section'>
         <h1>Сайты созданные на наших решениях</h1>
+        <div className='works-swiper-wrapper'>
+          <div className='swiper works-swiper'>
+            <div className='swiper-wrapper'>
+              <div className='swiper-slide'>
+                <img src='img/product-1.png' alt='product-1' />
+              </div>
+              <div className='swiper-slide'>
+                <img src='img/product-2.png' alt='product-2' />
+              </div>
+              <div className='swiper-slide'>
+                <img src='img/product-3.png' alt='product-3' />
+              </div>
+              <div className='swiper-slide'>
+                <img src='img/product-4.png' alt='product-4' />
+              </div>
+              <div className='swiper-slide'>
+                <img src='img/product-5.png' alt='product-5' />
+              </div>
+              <div className='swiper-slide'>
+                <img src='img/product-6.png' alt='product-6' />
+              </div>
+            </div>
+            <div className='swiper-button-prev'></div>
+            <div className='swiper-button-next'></div>
+          </div>
+        </div>
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
