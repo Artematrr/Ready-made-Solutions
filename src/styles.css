@@ -14,6 +14,14 @@
     url('/public/fonts/Circe/fonts/circe_bold.ttf') format('truetype'),
     url('/public/fonts/Circe/fonts/circe_bold.svg#circe_bold') format('svg');
 }
+@font-face {
+  font-family: 'Circe ExtraBold';
+  src: url('/public/fonts/Circe/fonts/circe_extrabold.woff2') format('woff2'),
+    url('/public/fonts/Circe/fonts/circe_extrabold.woff') format('woff'),
+    url('/public/fonts/Circe/fonts/circe_extrabold.ttf') format('truetype'),
+    url('/public/fonts/Circe/fonts/circe_extrabold.svg#circe_extrabold')
+      format('svg');
+}
 /* Reset-CSS */
 *,
 *::before,
@@ -138,13 +146,13 @@ select {
   flex: 1;
   overflow-y: auto;
   position: relative;
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     90deg,
     #fff,
     #fff 20px,
     rgba(162, 0, 0, 0.025) 20px,
     rgba(162, 0, 0, 0.025) 114px
-  );
+  ); */
 }
 
 .content {
@@ -155,6 +163,7 @@ select {
   color: var(--color-white);
   display: flex;
   width: 200px;
+  padding: 5px 15px;
   height: 40px;
   align-items: center;
   justify-content: center;
@@ -354,8 +363,10 @@ h1::after {
   font-size: 26px;
   line-height: 1.2;
   text-transform: uppercase;
-  /* font-weight: 700; */
-  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+  font-weight: 800;
+  font-family: 'Circe ExtraBold', 'Circe Bold', 'Circe', Inter, system-ui, Arial,
+    sans-serif;
+
   margin-bottom: 10px;
 }
 .sidebar-form-img {
@@ -410,7 +421,6 @@ h1::after {
   display: flex;
   flex-direction: row;
   padding: 50px 20px;
-
   column-gap: 10px;
   row-gap: 30px;
   justify-content: space-around;
@@ -427,8 +437,15 @@ h1::after {
   justify-content: center;
   align-items: center;
 }
+.main .sidebar-form-title {
+  font-size: 50px;
+}
 .main .sidebar-form-inputs {
   align-items: flex-start;
+}
+.main .sidebar-form-button {
+  width: 300px;
+  max-width: 100%;
 }
 .main .sidebar-form-label-button {
   font-size: 14px;
@@ -441,6 +458,12 @@ h1::after {
   .main .sidebar-form-container .col-one,
   .main .sidebar-form-container .col-two {
     width: 100%;
+  }
+  .main .sidebar-form-container .col-two {
+    max-width: 350px;
+  }
+  .main .sidebar-form-title {
+    font-size: 26px;
   }
   .main .sidebar-form-inputs {
     align-items: center;
@@ -592,7 +615,7 @@ h1::after {
 .header-actions-container {
   display: flex;
   align-items: end;
-  gap: 10px;
+  gap: 15px;
 }
 
 .header-favourites:hover,
@@ -606,7 +629,7 @@ h1::after {
 .header-cart {
   position: relative;
   padding-right: 10px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .header-favourites-count,
 .header-cart-count {

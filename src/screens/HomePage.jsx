@@ -513,8 +513,7 @@ const HomePage = () => {
             <span>...</span>
             <a href='#'>10</a>
             <a href='#'>11</a>
-            <a href='#' className='pagination-arrow-forward'>
-            </a>
+            <a href='#' className='pagination-arrow-forward'></a>
           </div>
         </div>
       </div>
@@ -689,10 +688,10 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      
+
       <div className='section'>
         <h1>Сайты созданные на наших решениях</h1>
-        <div className='works-swiper-wrapper'>
+        {/* <div className='works-swiper-wrapper'>
           <div className='swiper works-swiper'>
             <div className='swiper-wrapper'>
               <div className='swiper-slide'>
@@ -717,7 +716,7 @@ const HomePage = () => {
             <div className='swiper-button-prev'></div>
             <div className='swiper-button-next'></div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
