@@ -1,3 +1,9 @@
+import { A11y } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+
 const HomePage = () => {
   return (
     <main className='main'>
@@ -691,7 +697,7 @@ const HomePage = () => {
 
       <div className='section'>
         <h1>Сайты созданные на наших решениях</h1>
-        {/* <div className='works-swiper-wrapper'>
+        {/* 
           <div className='swiper works-swiper'>
             <div className='swiper-wrapper'>
               <div className='swiper-slide'>
@@ -716,10 +722,116 @@ const HomePage = () => {
             <div className='swiper-button-prev'></div>
             <div className='swiper-button-next'></div>
           </div>
-        </div> */}
+        */}
+        <div className='works-swiper-wrapper'>
+          <Swiper
+            className='works-swiper'
+            modules={[A11y]}
+            spaceBetween={30}
+            slidesPerView={4}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-1.png' alt='product-1' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-2.png' alt='product-2' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-3.png' alt='product-3' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-4.png' alt='product-4' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-5.png' alt='product-5' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='swiper-slide-overflow'>
+                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-title'>
+                  Добрый доктор - Сеть ветеринарных клиник
+                </div>
+                <div className='slide-city'>г. Москва</div>
+                <div className='slide-button button-primary'>
+                  Хочу такой сайт
+                </div>
+              </div>
+              <img src='img/product-6.png' alt='product-6' />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
+        
       </div>
       <div className='section'>
         <h1>Отзывы клиентов о готовых решениях</h1>

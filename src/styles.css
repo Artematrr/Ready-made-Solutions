@@ -1141,7 +1141,7 @@ h1::after {
   }
 }
 
-.swiper {
+/* .swiper {
   width: 100%;
   height: 100%;
 }
@@ -1161,19 +1161,38 @@ h1::after {
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: var(--color-black);
+  background: var(--color-black);
+  width: 24px;
+  height: 24px;
   z-index: 3;
 }
+*/
 .works-swiper-wrapper {
 }
 .works-swiper .swiper-slide {
   overflow: hidden;
-  max-height: 450px;
-  /* max-width: 330px; */
+  max-height: 380px;
+  position: relative;
 }
-.works-swiper .swiper-slide:hover {
-  opacity: 0.85;
+.swiper-slide-overflow {
+  display: none;
 }
+.works-swiper .swiper-slide:hover .swiper-slide-overflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: var(--color-white);
+  background: rgba(0, 0, 0, 0.85);
+}
+
 /* Productpage */
 
 /* Preset */
