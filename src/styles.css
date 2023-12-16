@@ -1,4 +1,4 @@
-/* @import url(/public/fonts/Circe/circe.css); */
+/* @import url(/fonts/Circe/circe.css); */
 
 @font-face {
   font-family: 'Circe';
@@ -198,7 +198,7 @@ h1 {
   word-break: break-word;
 }
 h1::after {
-  content: url('/public/img/underline.svg');
+  content: url('/img/underline.svg');
   max-width: 100%;
   display: flex;
   flex-shrink: 1;
@@ -216,10 +216,10 @@ h1::after {
   width: 24px;
 }
 .heart-full::before {
-  content: url('/public/img/icons/heart-full.svg');
+  content: url('/img/icons/heart-full.svg');
 }
 .heart-empty::before {
-  content: url('/public/img/icons/heart-empty.svg');
+  content: url('/img/icons/heart-empty.svg');
 }
 
 /* Sidebar */
@@ -531,7 +531,7 @@ h1::after {
   position: relative;
 }
 .nav-city::before {
-  content: url('/public/img/icons/map-mark.svg');
+  content: url('/img/icons/map-mark.svg');
   display: inline-block;
   position: relative;
   height: 18px;
@@ -575,7 +575,7 @@ h1::after {
 }
 
 .nav-phone::after {
-  content: url('/public/img/icons/WhatsApp.svg');
+  content: url('/img/icons/WhatsApp.svg');
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -603,7 +603,7 @@ h1::after {
   background: rgba(255, 255, 255, 0.6);
 }
 .search-container::before {
-  content: url('/public/img/icons/search-normal.svg');
+  content: url('/img/icons/search-normal.svg');
   display: inline-block;
   height: 24px;
   width: 24px;
@@ -680,7 +680,7 @@ h1::after {
 }
 
 .footer .phone::before {
-  content: url('/public/img/icons/call.svg');
+  content: url('/img/icons/call.svg');
   display: inline-block;
   position: relative;
   top: 5px;
@@ -688,7 +688,7 @@ h1::after {
   width: 20px;
 }
 .footer .email::before {
-  content: url('/public/img/icons/sms.svg');
+  content: url('/img/icons/sms.svg');
   display: inline-block;
   position: relative;
   top: 5px;
@@ -699,7 +699,7 @@ h1::after {
   padding-left: 10px;
 }
 .get-collection::before {
-  content: url('/public/img/icons/notes.svg');
+  content: url('/img/icons/notes.svg');
   display: inline-block;
   position: relative;
   left: -10px;
@@ -708,7 +708,7 @@ h1::after {
   top: -2px;
 }
 .get-recall::before {
-  content: url('/public/img/icons/outgoing-call-rounded.svg');
+  content: url('/img/icons/outgoing-call-rounded.svg');
   display: inline-block;
   position: relative;
   left: -10px;
@@ -946,7 +946,7 @@ h1::after {
   font-size: 24px;
 }
 .price-new::before {
-  content: url('/public/img/icons/wallet-outline.svg');
+  content: url('/img/icons/wallet-outline.svg');
   display: inline-block;
   position: relative;
   top: 2px;
@@ -987,7 +987,7 @@ h1::after {
   position: relative;
 }
 .button-buy a::before {
-  content: url('/public/img/icons/shopping-bag-red.svg');
+  content: url('/img/icons/shopping-bag-red.svg');
   display: inline-block;
   position: relative;
   top: 7px;
@@ -1000,7 +1000,7 @@ h1::after {
   background: var(--color-red);
 }
 .button-buy a:hover:before {
-  content: url('/public/img/icons/shopping-bag-white.svg');
+  content: url('/img/icons/shopping-bag-white.svg');
   display: inline-block;
   position: relative;
   top: 7px;
@@ -1058,7 +1058,7 @@ h1::after {
 }
 .product-pagination .pagination-arrow-back,
 .product-pagination .pagination-arrow-forward {
-  content: url('/public/img/icons/arrow.svg');
+  content: url('/img/icons/arrow.svg');
   width: 44px;
   height: 44px;
   /* padding: 11px; */
