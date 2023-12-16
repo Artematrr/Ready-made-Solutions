@@ -750,7 +750,11 @@ const HomePage = () => {
           >
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -763,7 +767,11 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+              <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -776,7 +784,11 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                   <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -789,7 +801,11 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                   <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -802,7 +818,11 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                   <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -815,7 +835,11 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                <div className='slide-link'>https://www.dobruy-doctor.ru/ </div>
+                   <div className='slide-link'>
+                  <a href='https://www.dobruy-doctor.ru/'>
+                    https://www.dobruy-doctor.ru/
+                  </a>
+                </div>
                 <div className='slide-title'>
                   Добрый доктор - Сеть ветеринарных клиник
                 </div>
@@ -831,7 +855,6 @@ const HomePage = () => {
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
-        
       </div>
       <div className='section'>
         <h1>Отзывы клиентов о готовых решениях</h1>

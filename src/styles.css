@@ -1,27 +1,78 @@
-/* @import url(/fonts/Circe/circe.css); */
-
-@font-face {
-  font-family: 'Circe';
-  src: url('/public/fonts/Circe/fonts/circe.woff2') format('woff2'),
-    url('/public/fonts/Circe/fonts/circe.woff') format('woff'),
-    url('/public/fonts/Circe/fonts/circe.ttf') format('truetype'),
-    url('/public/fonts/Circe/fonts/circe.svg#circe') format('svg');
-}
+/* Fonts */
 @font-face {
   font-family: 'Circe Bold';
-  src: url('/public/fonts/Circe/fonts/circe_bold.woff2') format('woff2'),
+  src: url('/public/fonts/Circe/fonts/circe_bold.eot');
+  src: url('/public/fonts/Circe/fonts/circe_bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe_bold.woff2') format('woff2'),
     url('/public/fonts/Circe/fonts/circe_bold.woff') format('woff'),
     url('/public/fonts/Circe/fonts/circe_bold.ttf') format('truetype'),
     url('/public/fonts/Circe/fonts/circe_bold.svg#circe_bold') format('svg');
 }
+
 @font-face {
   font-family: 'Circe ExtraBold';
-  src: url('/public/fonts/Circe/fonts/circe_extrabold.woff2') format('woff2'),
+  src: url('/public/fonts/Circe/fonts/circe_extrabold.eot');
+  src: url('/public/fonts/Circe/fonts/circe_extrabold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe_extrabold.woff2') format('woff2'),
     url('/public/fonts/Circe/fonts/circe_extrabold.woff') format('woff'),
     url('/public/fonts/Circe/fonts/circe_extrabold.ttf') format('truetype'),
     url('/public/fonts/Circe/fonts/circe_extrabold.svg#circe_extrabold')
       format('svg');
 }
+
+@font-face {
+  font-family: 'Circe ExtraLight';
+  src: url('/public/fonts/Circe/fonts/circe_extralight.eot');
+  src: url('/public/fonts/Circe/fonts/circe_extralight.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe_extralight.woff2') format('woff2'),
+    url('/public/fonts/Circe/fonts/circe_extralight.woff') format('woff'),
+    url('/public/fonts/Circe/fonts/circe_extralight.ttf') format('truetype'),
+    url('/public/fonts/Circe/fonts/circe_extralight.svg#circe_extralight')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'Circe Light';
+  src: url('/public/fonts/Circe/fonts/circe_light.eot');
+  src: url('/public/fonts/Circe/fonts/circe_light.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe_light.woff2') format('woff2'),
+    url('/public/fonts/Circe/fonts/circe_light.woff') format('woff'),
+    url('/public/fonts/Circe/fonts/circe_light.ttf') format('truetype'),
+    url('/public/fonts/Circe/fonts/circe_light.svg#circe_light') format('svg');
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('/public/fonts/Circe/fonts/circe.eot');
+  src: url('/public/fonts/Circe/fonts/circe.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe.woff2') format('woff2'),
+    url('/public/fonts/Circe/fonts/circe.woff') format('woff'),
+    url('/public/fonts/Circe/fonts/circe.ttf') format('truetype'),
+    url('/public/fonts/Circe/fonts/circe.svg#circe') format('svg');
+}
+
+@font-face {
+  font-family: 'Circe Thin';
+  src: url('/public/fonts/Circe/fonts/circe_thin.eot');
+  src: url('/public/fonts/Circe/fonts/circe_thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/Circe/fonts/circe_thin.woff2') format('woff2'),
+    url('/public/fonts/Circe/fonts/circe_thin.woff') format('woff'),
+    url('/public/fonts/Circe/fonts/circe_thin.ttf') format('truetype'),
+    url('/public/fonts/Circe/fonts/circe_thin.svg#circe_thin') format('svg');
+}
+.f-900 {
+}
+.f-700 {
+}
+.f-350 {
+}
+
 /* Reset-CSS */
 *,
 *::before,
@@ -163,6 +214,7 @@ select {
   color: var(--color-white);
   display: flex;
   width: 200px;
+  max-width: 100%;
   padding: 5px 15px;
   height: 40px;
   align-items: center;
@@ -1142,32 +1194,6 @@ h1::after {
   }
 }
 
-/* .swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  background: var(--color-black);
-  width: 24px;
-  height: 24px;
-  z-index: 3;
-}
-*/
 .works-swiper-wrapper {
 }
 .works-swiper .swiper-slide {
@@ -1192,6 +1218,31 @@ h1::after {
   bottom: 0;
   color: var(--color-white);
   background: rgba(0, 0, 0, 0.85);
+}
+.slide-link {
+  margin-bottom: 5px;
+}
+.slide-link a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+.slide-link a:hover {
+  color: var(--color-gray-light);
+}
+.slide-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+  line-height: 20px;
+}
+.slide-city {
+  margin-bottom: 15px;
+  font-family: 'Circe Light', 'Circe', Inter, system-ui, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 14px;
+}
+.slide-button {
 }
 
 /* Productpage */
