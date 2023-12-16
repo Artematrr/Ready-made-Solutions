@@ -1312,6 +1312,64 @@ const HomePage = () => {
 
       <div className='section'>
         <h1>Полезные советы</h1>
+        <div className='tips-swiper-wrapper'>
+          <Swiper
+            className='tips-swiper'
+            modules={[A11y]}
+            spaceBetween={30}
+            slidesPerView={2.5}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <a href='#' className='tip-container'>
+                <div className='tips-img'>
+                  <img src='img/tip-1.png' alt='tip-1' />
+                </div>
+                <div className='tip-text'>
+                  Закупка ссылок всегда работала и будет работать
+                </div>
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href='#' className='tip-container'>
+                <div className='tips-img'>
+                  <img src='img/tip-2.png' alt='tip-2' />
+                </div>
+                <div className='tip-text'>
+                Текст как инструмент продвижения
+
+                </div>
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <a href='#' className='tip-container'>
+                <div className='tips-img'>
+                  <img src='img/tip-3.png' alt='tip-3' />
+                </div>
+                <div className='tip-text'>
+                  Закупка ссылок всегда работала и будет работать
+                </div>
+              </a>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </main>
   )
