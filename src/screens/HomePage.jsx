@@ -855,7 +855,267 @@ const HomePage = () => {
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
-        <div className='services-wrapper'></div>
+        <div className='services-wrapper'>
+          <div className='services-table-header'>
+            <div className='item-name'>Услуга</div>
+            <div className='item-price'>Стоимость в рублях</div>
+            <div className='item-buttons'></div>
+          </div>
+
+          <div className='services-table-item'>
+            <div className='services-table-item-category'>
+              <img
+                className='category-icon'
+                src='img/icons/service-1.svg'
+                alt='Изменение цета'
+              />
+              <div className='category-title'>Изменение цета</div>
+            </div>
+
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>Лендинг</div>
+                <div className='item-price'>550</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div className='services-table-item-dropdown'>
+                Предварительные выводы неутешительны: реализация намеченных
+                плановых заданий, а также свежий взгляд на привычные вещи —
+                безусловно открывает новые горизонты для благоприятных
+                перспектив. Наше дело не так однозначно, как может показаться:
+                экономическая повестка сегодняшнего дня однозначно определяет
+                каждого участника как способного принимать собственные решения
+                касаемо существующих финансовых и административных условий.
+                Предварительные выводы неутешительны: экономическая повестка
+                сегодняшнего дня однозначно.
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>корпоративный сайт</div>
+                <div className='item-price'>1 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>интернет-магазин</div>
+                <div className='item-price'>3 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='services-table-item'>
+            <div className='services-table-item-category'>
+              <img
+                className='category-icon'
+                src='img/icons/service-2.svg'
+                alt='Дизайн'
+              />
+              <div className='category-title'>Дизайн</div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>разработка логотипа</div>
+                <div className='item-price'>10 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>разработка иконок</div>
+                <div className='item-price'>250 руб за 1 штуку</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='services-table-item'>
+            <div className='services-table-item-category'>
+              <img
+                className='category-icon'
+                src='img/icons/service-3.svg'
+                alt='Тех. поддержка'
+              />
+              <div className='category-title'>Тех. поддержка</div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>
+                  Тех. Поддержка (Доработка или разработка функционала)
+                </div>
+                <div className='item-price'>
+                  Индивидуальный просчет из расчета 1 час программиста или
+                  верстальщика 1100 руб
+                </div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>добавить новый блок</div>
+                <div className='item-price'>2 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>установка антиспама</div>
+                <div className='item-price'>3 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='services-table-item'>
+            <div className='services-table-item-category'>
+              <img
+                className='category-icon'
+                src='img/icons/service-4.svg'
+                alt='Наполнение контентом'
+              />
+              <div className='category-title'>Наполнение контентом</div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>написание текстов</div>
+                <div className='item-price'>300 руб за 1000 знаков</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>
+                  заливка карточек товара до 100 шт.
+                </div>
+                <div className='item-price'>5 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>
+                  заливка карточек от 101 до 500 шт
+                </div>
+                <div className='item-price'>10 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>заливка карточек до 1000 шт</div>
+                <div className='item-price'>16 500</div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='services-item-container'>
+              <div className='services-table-item-row'>
+                <div className='item-name'>
+                  обработка и размещение контента (фото, текстов)
+                </div>
+                <div className='item-price'>
+                  Индивидуальный просчет из расчета 1 час контент-менеджера 750
+                  руб
+                </div>
+                <div className='item-buttons'>
+                  <div className='button-secondary'>
+                    <span>Подробнее</span>
+                  </div>
+                  <div className='button-primary'>
+                    <a href='#'> Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='section'>
         <h1>Отзывы клиентов о готовых решениях</h1>

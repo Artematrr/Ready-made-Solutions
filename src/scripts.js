@@ -8,8 +8,15 @@ $(document).ready(function () {
 
   $('.card-favourites i').click(function () {
     $(this).toggleClass('heart-full heart-empty')
-  
-})
+  })
+
+  $('.item-buttons .button-secondary').click(function () {
+    // $(this).closest('.services-item-container').toggleClass('open');
+    var $container = $(this).closest('.services-item-container');    
+
+    $container.toggleClass('open').find('.button-secondary').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
+
+  })
 })
 
 // new Swiper('.works-swiper', {
