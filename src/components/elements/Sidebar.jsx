@@ -327,7 +327,7 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        <div className='sidebar-form-container'>
+        <div className='sidebar-form-wrapper'>
           <div className='sidebar-form-title'>
             Не знаете, какое готовое решение вам подойдёт?
           </div>

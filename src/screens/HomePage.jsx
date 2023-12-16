@@ -525,7 +525,7 @@ const HomePage = () => {
       </div>
 
       <div className='section'>
-        <div className='sidebar-form-container'>
+        <div className='sidebar-form-wrapper'>
           <div className='col-one'>
             <div className='sidebar-form-title'>
               Не знаете, какое готовое решение вам подойдёт?
@@ -767,7 +767,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-              <div className='slide-link'>
+                <div className='slide-link'>
                   <a href='https://www.dobruy-doctor.ru/'>
                     https://www.dobruy-doctor.ru/
                   </a>
@@ -784,7 +784,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                   <div className='slide-link'>
+                <div className='slide-link'>
                   <a href='https://www.dobruy-doctor.ru/'>
                     https://www.dobruy-doctor.ru/
                   </a>
@@ -801,7 +801,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                   <div className='slide-link'>
+                <div className='slide-link'>
                   <a href='https://www.dobruy-doctor.ru/'>
                     https://www.dobruy-doctor.ru/
                   </a>
@@ -818,7 +818,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                   <div className='slide-link'>
+                <div className='slide-link'>
                   <a href='https://www.dobruy-doctor.ru/'>
                     https://www.dobruy-doctor.ru/
                   </a>
@@ -835,7 +835,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className='swiper-slide-overflow'>
-                   <div className='slide-link'>
+                <div className='slide-link'>
                   <a href='https://www.dobruy-doctor.ru/'>
                     https://www.dobruy-doctor.ru/
                   </a>
@@ -855,6 +855,7 @@ const HomePage = () => {
       </div>
       <div className='section'>
         <h1>Дополнительные услуги</h1>
+        <div className='services-wrapper'></div>
       </div>
       <div className='section'>
         <h1>Отзывы клиентов о готовых решениях</h1>
