@@ -699,7 +699,7 @@ h1::after {
   padding-left: 10px;
 }
 .get-collection::before {
-  content: url('/public/img/icons/notes.svg');
+  content: url('img/icons/notes.svg');
   display: inline-block;
   position: relative;
   top: -1px;
@@ -708,7 +708,7 @@ h1::after {
   width: 20px;
 }
 .get-recall::before {
-  content: url('/public/img/icons/outgoing-call-rounded.svg');
+  content: url('/img/icons/outgoing-call-rounded.svg');
   display: inline-block;
   position: relative;
   left: -10px;
