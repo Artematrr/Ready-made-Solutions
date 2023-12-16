@@ -1463,6 +1463,8 @@ h1::after {
   padding: 15px 20px;
   background: var(--color-white);
   gap: 18px;
+  height: min-content;
+  
 }
 .qna-item-title::after {
   content: '';
