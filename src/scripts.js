@@ -17,6 +17,10 @@ $(document).ready(function () {
     $container.toggleClass('open').find('.button-secondary').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
 
   })
+
+  $('.qna-item-title').click(function () {
+    $(this).parent('.qna-item').toggleClass('open')
+  })
 })
 
 // new Swiper('.works-swiper', {

@@ -853,6 +853,7 @@ const HomePage = () => {
           </Swiper>
         </div>
       </div>
+
       <div className='section'>
         <h1>Дополнительные услуги</h1>
         <div className='services-wrapper'>
@@ -1119,10 +1120,196 @@ const HomePage = () => {
       </div>
       <div className='section'>
         <h1>Отзывы клиентов о готовых решениях</h1>
+        <div className='reviews-swiper-wrapper'>
+          <Swiper
+            className='reviews-swiper'
+            modules={[A11y]}
+            spaceBetween={30}
+            slidesPerView={3}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className='review-top'>
+                <div className='review-head'>
+                  <img src='img/review-1.png' alt='review-1' />
+                  <div className='review-name'>Katrin P.</div>
+                </div>
+                <div className='review-text'>
+                  Обращалась за консультацией в Агелар, было очень много
+                  вопросов по тому, как все наши хотелки совместить на одной
+                  площадке. Казалось это нереальным, но благодаря команде Агелар
+                  всё удалось успешно реализовать. Благодарю и всем рекомендую!
+                </div>
+              </div>
+              <a href='#' className='review-original'>
+                Посмотреть оригинал отзыва
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='review-top'>
+                <div className='review-head'>
+                  <img src='img/review-2.png' alt='review-2' />
+                  <div className='review-name'>Дмитрий С</div>
+                </div>
+                <div className='review-text'>
+                  С компанией Агелар мы тесно сотрудничаем с прошлого года. За
+                  это время был создан с 0 новый сайт компании, по всем
+                  тематическим запросам сейчас этот сайт находится в Топ 10
+                  выдачи Яндекса. Это позволяет привлекать целевых клиентов.
+                  Эффективность такого продвижения значительно выше чем просто
+                  реклама в Я. Директ. Рекомендую!
+                </div>
+              </div>
+              <a href='#' className='review-original'>
+                Посмотреть оригинал отзыва
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='review-top'>
+                <div className='review-head'>
+                  <img
+                    className='review-image'
+                    src='img/review-3.png'
+                    alt='review-3'
+                  />
+                  <div className='review-name'>Зоя Анисина</div>
+                </div>
+                <div className='review-text'>
+                  Заказывали полный аудит нашего сайта. Проблема была, по
+                  Яндексу выше топ 40 не могли подняться. За время работы были
+                  устранены ошибки разработчиков, пересмотрены запросы,
+                  переотимизирован сайт. Через месяц сайт начал рости. Спустя 3
+                  месяца сайт на 50% по запросам вышел в топ. С поставленной
+                  задачей ребята справились.
+                </div>
+              </div>
+              <a href='#' className='review-original'>
+                Посмотреть оригинал отзыва
+              </a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='review-top'>
+                <div className='review-head'>
+                  <img src='img/review-1.png' alt='review-1' />
+                  <div className='review-name'>Katrin P.</div>
+                </div>
+                <div className='review-text'>
+                  Обращалась за консультацией в Агелар, было очень много
+                  вопросов по тому, как все наши хотелки совместить на одной
+                  площадке. Казалось это нереальным, но благодаря команде Агелар
+                  всё удалось успешно реализовать. Благодарю и всем рекомендую!
+                </div>
+              </div>
+              <a href='#' className='review-original'>
+                Посмотреть оригинал отзыва
+              </a>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
+
       <div className='section'>
-        <h1>Вопрос - ответ</h1>
+        <div className='qna-wrapper'>
+          <h1> Вопрос - ответ</h1>
+          <div className='qna-container'>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Как оценивать результаты SEO (СЕО)?
+              </div>
+              <div className='qna-item-dropdown'>
+                Во-первых, можно проверить, на каком месте находится сайт в
+                выдаче по ключевым запросам. В ежемесячном отчёте от нашей
+                компании всегда указана позиция ресурса в поиске. Следующий
+                критерий — количество новых посетителей, пришедших на сайт после
+                его оптимизации. В нашем ежемесячном отчёте также есть эта
+                информация. Наконец, повышение конверсии также указывает на
+                качественную работу оптимизатора.
+              </div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>Когда СЕО начинает работать?</div>
+              <div className='qna-item-dropdown'>
+                Во-первых, можно проверить, на каком месте находится сайт в
+                выдаче по ключевым запросам. В ежемесячном отчёте от нашей
+                компании всегда указана позиция ресурса в поиске.
+              </div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Быстрое или качественное СЕО-продвижение?
+              </div>
+              <div className='qna-item-dropdown'>
+                Во-первых, можно проверить, на каком месте находится сайт в
+                выдаче по ключевым запросам. В ежемесячном отчёте от нашей
+                компании всегда указана позиция ресурса в поиске.
+              </div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Можно ли получить какие-то гарантии продвижения сайта?
+              </div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Можно ли получить какие-то гарантии продвижения сайта?
+              </div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>Что такое СЕО оптимизация?</div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Как оценивать результаты SEO (СЕО)?
+              </div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>Когда СЕО начинает работать?</div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Быстрое или качественное СЕО-продвижение?
+              </div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>
+                Можно ли получить какие-то гарантии продвижения сайта?
+              </div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+            <div className='qna-item'>
+              <div className='qna-item-title'>Что такое СЕО оптимизация?</div>
+              <div className='qna-item-dropdown'>...</div>
+            </div>
+          </div>
+          <div className='qna-more'>
+            <a href='#'>Смотреть ещё</a>
+          </div>
+        </div>
       </div>
+
       <div className='section'>
         <h1>Полезные советы</h1>
       </div>
