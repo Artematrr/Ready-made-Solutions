@@ -3,7 +3,9 @@ const Sidebar = () => {
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
         <div className='logo'>
-          <img loading='lazy' src='img/logo.svg' alt='Готовые Решения' />
+          <a href='/'>
+            <img loading='lazy' src='img/logo.svg' alt='Готовые Решения' />
+          </a>
         </div>
         <div className='sidebar-nav-label'>Каталог сайтов</div>
         <div className='sidebar-nav'>
