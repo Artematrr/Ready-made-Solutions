@@ -33,8 +33,8 @@ const Sidebar = () => {
               </a>
               <ul className='sidebar-nav-list'>
                 <li className='sidebar-nav-item level-2'>
-                  <a href='#'>
-                    <span>Подуктовые сайты</span>
+                  <a href='/product'>
+                    <span>Продуктовые сайты</span>
                     <span className='item-count'>10</span>
                   </a>
                 </li>
