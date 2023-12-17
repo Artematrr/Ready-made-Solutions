@@ -74,7 +74,7 @@ const HomePage = () => {
                     <a href='#'>Демо</a>
                   </div>
                   <div className='button-about'>
-                    <a href='#'>Подробнее</a>
+                    <a href='product'>Подробнее</a>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const HomePage = () => {
                     <a href='#'>Демо</a>
                   </div>
                   <div className='button-about'>
-                    <a href='#'>Подробнее</a>
+                    <a href='product'>Подробнее</a>
                   </div>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const HomePage = () => {
                     <a href='#'>Демо</a>
                   </div>
                   <div className='button-about'>
-                    <a href='#'>Подробнее</a>
+                    <a href='product'>Подробнее</a>
                   </div>
                 </div>
               </div>
