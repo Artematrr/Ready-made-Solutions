@@ -23,9 +23,9 @@ const Product = () => {
             <div className='product-detail'>
               <div className='product-description'>
                 <div className='product-detail-title'>
-                  Встроенный функционал
+                  Встроенный функционал:
                 </div>
-                <div className='product-detail-title'>Бесплатная установка</div>
+                <div className='product-detail-title'>Бесплатная установка:</div>
                 <div className='product-detail-text'>
                   подключение и настройка сайта на ваш домен, хостинг и SSL
                   сертификата
@@ -34,7 +34,7 @@ const Product = () => {
 
               <div className='product-extra'>
                 <div className='product-detail-title'>
-                  Дополнительных функционал
+                  Дополнительных функционал:
                 </div>
                 <div className='product-exta-check-list'>
                   <div className='product-exta-check-item'>
@@ -105,7 +105,7 @@ const Product = () => {
               </div>
 
               <div className='product-payment'>
-                <div className='product-detail-title'>К оплате принимаются</div>
+                <div className='product-detail-title'>К оплате принимаются:</div>
                 <div className='product-payment-cards'>
                   <a href='#'>
                     <img
