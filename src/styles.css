@@ -1583,12 +1583,12 @@ h1::after {
 }
 
 /* Productpage */
+
 .product-preview-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* gap: 60px; */
-
 }
 .product-preview-wrapper .col-one {
   width: 60%;
