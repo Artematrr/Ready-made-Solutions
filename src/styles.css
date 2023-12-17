@@ -899,23 +899,22 @@ h1::after {
 .sort-dropdown a:hover {
   color: var(--color-red);
 }
-.sort-corrent::after {
+.sort-container::after {
   content: '';
   display: inline-block;
-  position: relative;
-  top: -1px;
+  position: absolute;
   width: 7px;
   height: 7px;
-  right: -10px;
+  top: 13px;
+  right: 10px;
   border-left: 1px solid var(--color-black);
   border-top: 1px solid var(--color-black);
   transition: transform 0.2s;
   transform: rotate(225deg);
 }
-.sort-container:has(.sort-dropdown:hover) .sort-corrent:after,
-.sort-corrent:hover:after {
+.sort-container:has(.sort-dropdown:hover) .sort-container:after,
+.sort-container:hover:after {
   transform: rotate(45deg);
-  top: -1px;
 }
 
 .tags-wrapper {
@@ -942,15 +941,14 @@ h1::after {
 }
 
 .product-cards-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   column-gap: 30px;
   row-gap: 30px;
-  justify-content: space-between;
-
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-card {
@@ -961,7 +959,8 @@ h1::after {
   background: var(--color-white);
   border-radius: 5px;
   overflow: hidden;
-  width: 420px;
+  /* width: 420px; */
+  max-width: 520px;
   justify-content: space-between;
   flex-grow: 1;
 }
@@ -978,10 +977,6 @@ h1::after {
 .card-image img {
   margin-inline: auto;
 }
-.card-image:hover {
-  /* width: 100%; */
-  /* transition: 0.2 all ease; */
-}
 .card-image::-webkit-scrollbar {
   width: 4px;
 }
@@ -990,8 +985,7 @@ h1::after {
   padding: 10px 15px;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 15px; */
-  /* align-self: stretch; */
+  row-gap: 10px;
   border-top: 1px solid var(--color-gray-light);
   padding-top: 15px;
   margin-block: 15px;
@@ -1119,6 +1113,19 @@ h1::after {
   background: var(--color-white);
   text-decoration: underline;
   border: 1px solid var(--color-red);
+}
+@media screen and (max-width: 992px) {
+  .product-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-cards-wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    justify-items: center;
+  }
 }
 
 .banner {
