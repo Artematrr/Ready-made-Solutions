@@ -1,9 +1,5 @@
 {
-  "routes": [{ "src": "/product", "dest": "/src/screens/ProductPage.jsx" }],
-  "rewrites": [
-    {
-      "source": "/product",
-      "destination": "/src/screens/ProductPage.jsx"
-    }
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
   ]
 }
