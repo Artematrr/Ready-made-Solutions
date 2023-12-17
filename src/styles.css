@@ -1789,7 +1789,7 @@ input[type='checkbox']:checked + label:after {
   position: relative;
 }
 .product-exta-add .button-primary::before {
-  content: url('img/icons/plus.svg');
+  content: url('/img/icons/plus.svg');
   display: inline-block;
   position: relative;
   /* left: -5px; */
@@ -1874,7 +1874,7 @@ input[type='checkbox']:checked + label:after {
   position: relative;
 }
 .buisness-area-tag::before {
-  content: url('img/icons/paper-plane.svg');
+  content: url('/img/icons/paper-plane.svg');
   display: inline-block;
   position: relative;
   height: 28px;
