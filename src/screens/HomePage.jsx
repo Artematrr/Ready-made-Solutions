@@ -1255,9 +1255,7 @@ const HomePage = () => {
               <div className='qna-item-title'>
                 Быстрое или качественное СЕО-продвижение?
               </div>
-              <div className='qna-item-dropdown'>
-             ...
-              </div>
+              <div className='qna-item-dropdown'>...</div>
             </div>
             <div className='qna-item'>
               <div className='qna-item-title'>
@@ -1350,10 +1348,7 @@ const HomePage = () => {
                 <div className='tips-img'>
                   <img src='img/tip-2.png' alt='tip-2' />
                 </div>
-                <div className='tip-text'>
-                Текст как инструмент продвижения
-
-                </div>
+                <div className='tip-text'>Текст как инструмент продвижения</div>
               </a>
             </SwiperSlide>
             <SwiperSlide>
