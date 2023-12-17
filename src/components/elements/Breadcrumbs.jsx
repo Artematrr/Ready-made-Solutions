@@ -1,5 +1,11 @@
 const Breadcrumbs = () => {
-  return <div>{'Homepage > Prodcut_1 > View'}</div>
+  return (
+    <div className='breadcrumbs'>
+      <a href='#'>Готовые решения</a>
+      <a href='#'>Лендинги</a>
+      <a href='#'>Натуральные напитки</a>
+    </div>
+  )
 }
 
 export default Breadcrumbs

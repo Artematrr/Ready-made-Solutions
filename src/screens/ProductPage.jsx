@@ -6,12 +6,160 @@ const Product = () => {
   return (
     <main className='main'>
       <Breadcrumbs />
-      <div className=''>Пред показ сайта в разных размерах</div>
-      <div className=''>Описание сайта</div>
-      <div className=''>Дополнительных функционал</div>
-      <div className=''>К оплате принимаются</div>
-      <div className=''>Под какие сферы подходит</div>
 
+      <div className='section'>
+        <div className='product-preview-wrapper'>
+          <div className='col-one'>
+            <div className='product-preview'>
+              <img
+                src='img/product-preview-1.png'
+                alt='product-preview-1'
+                loading='lazy'
+              />
+            </div>
+          </div>
+
+          <div className='col-two'>
+            <div className='product-detail'>
+              <div className='product-description'>
+                <div className='product-detail-title'>
+                  Встроенный функционал
+                </div>
+                <div className='product-detail-title'>Бесплатная установка</div>
+                <div className='product-detail-text'>
+                  подключение и настройка сайта на ваш домен, хостинг и SSL
+                  сертификата
+                </div>
+              </div>
+
+              <div className='product-extra'>
+                <div className='product-detail-title'>
+                  Дополнительных функционал
+                </div>
+                <div className='product-exta-check-list'>
+                  <div className='product-exta-check-item'>
+                    <input
+                      className='product-exta-check-box'
+                      type='checkbox'
+                      id='extra1'
+                    />
+                    <label
+                      className='product-exta-check-label'
+                      htmlFor='extra1'
+                    >
+                      Хостинг + домен
+                    </label>
+                    <div className='product-exta-check-price'>1500 р</div>
+                  </div>
+                  <div className='product-exta-check-item'>
+                    <input
+                      className='product-exta-check-box'
+                      type='checkbox'
+                      id='extra2'
+                    />
+                    <label
+                      className='product-exta-check-label'
+                      htmlFor='extra2'
+                    >
+                      Установка на хостинг
+                    </label>
+                    <div className='product-exta-check-price'>1500 р</div>
+                  </div>
+                  <div className='product-exta-check-item'>
+                    <input
+                      className='product-exta-check-box'
+                      type='checkbox'
+                      id='extra3'
+                    />
+                    <label
+                      className='product-exta-check-label'
+                      htmlFor='extra3'
+                    >
+                      Наполнение
+                    </label>
+                    <div className='product-exta-check-price'>1500 р</div>
+                  </div>
+                  <div className='product-exta-check-item'>
+                    <input
+                      className='product-exta-check-box'
+                      type='checkbox'
+                      id='extra4'
+                    />
+                    <label
+                      className='product-exta-check-label'
+                      htmlFor='extra4'
+                    >
+                      Интеграция с 1С
+                    </label>
+                    <div className='product-exta-check-price'>1500 р</div>
+                  </div>
+                </div>
+                <div className='product-exta-more'>
+                  <a href='#'>Ещё</a>
+                </div>
+                <div className='product-exta-add'>
+                  <div className='button-primary'>
+                    <a href='#'>Добавить к корзине</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className='product-payment'>
+                <div className='product-detail-title'>К оплате принимаются</div>
+                <div className='product-payment-cards'>
+                  <a href='#'>
+                    <img
+                      loading='lazy'
+                      src='img/icons/pay-mir.svg'
+                      alt='pay-mir'
+                    />
+                  </a>
+                  <a href='#'>
+                    <img
+                      src='img/icons/pay-master-card.svg'
+                      alt='pay-master-card'
+                    />
+                  </a>
+                  <a href='#'>
+                    <img
+                      loading='lazy'
+                      src='img/icons/pay-visa.svg'
+                      alt='pay-visa'
+                    />
+                  </a>
+                  <a href='#'>
+                    <img
+                      src='img/icons/pay-you-money.svg'
+                      alt='pay-you-money'
+                    />
+                  </a>
+                  <a href='#'>
+                    <img
+                      loading='lazy'
+                      src='img/icons/pay-sbp.svg'
+                      alt='pay-sbp'
+                    />
+                  </a>
+                  <a href='#'>
+                    <img
+                      loading='lazy'
+                      src='img/icons/pay-qr.svg'
+                      alt='pay-qr'
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='section'>
+        <h1>
+          Под какие сферы бизнеса подходит сайт{' '}
+          <span className='buisness-area-hilight'>“Натуральные напитки”</span>{' '}
+        </h1>
+      </div>
 
       <div className='section'>
         <div className='sidebar-form-wrapper'>
@@ -61,7 +209,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-      
+
       <div className='section'>
         <h1>Сайты созданные на наших решениях</h1>
         {/* 
@@ -342,8 +490,6 @@ const Product = () => {
           </div>
         </div>
       </div>
-
-
     </main>
   )
 }

@@ -300,7 +300,7 @@ h1::after {
 
 .section {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .icon::before {
@@ -680,6 +680,7 @@ h1::after {
   width: 100%;
   height: 50px;
   background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 .search-container {
   width: 70%;
@@ -737,6 +738,30 @@ h1::after {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.breadcrumbs a {
+  position: relative;
+}
+.breadcrumbs a::after {
+  content: url('/public/img/icons/arrow-small.svg');
+  position: relative;
+  top: 4px;
+  margin-left: 15px;
+  height: 16px;
+  width: 16px;
+}
+.breadcrumbs a:last-child::after {
+  content: none;
+}
+.breadcrumbs a:last-child {
+  color: var(--color-red);
 }
 
 /* Footer */
@@ -1556,10 +1581,190 @@ h1::after {
   line-height: 26px;
   letter-spacing: 1.1px;
 }
+
 /* Productpage */
+.product-preview-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 60px; */
+}
+.col-one {
+  width: 60%;
+}
+.col-two {
+  width: 38%;
+}
+.product-preview {
+}
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product-detail-title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+}
+.product-detail-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.product-description,
+.product-extra,
+.product-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border-radius: 8px;
+  background: var(--color-gray-lightest);
+}
+
+.product-exta-check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-exta-check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+input[type='checkbox']:checked + label,
+input[type='checkbox']:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-gray-light);
+  background-color: var(--color-white);
+}
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  border-radius: 2px;
+}
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 20px;
+  height: 10px;
+  border-radius: 1px;
+  border-left: 4px solid var(--color-red);
+  border-bottom: 4px solid var(--color-red);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type='checkbox']:not(:checked) + label:after {
+  opacity: 0;
+}
+input[type='checkbox']:checked + label:after {
+  opacity: 1;
+}
+.product-exta-check-box {
+}
+.product-exta-check-label {
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.product-exta-check-price {
+  color: var(--color-red);
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+}
+.product-exta-more {
+  text-align: center;
+  text-decoration: underline;
+  position: relative;
+}
+.product-exta-more a {
+  position: relative;
+}
+.product-exta-more a::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  right: -10px;
+  top: -4px;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid var(--color-black);
+  border-top: 2px solid var(--color-black);
+  transition: transform 0.3s;
+  transform: rotate(225deg);
+}
+.product-exta-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-exta-add .button-primary {
+  position: relative;
+}
+.product-exta-add .button-primary::before {
+  content: url('img/icons/plus.svg');
+  display: inline-block;
+  position: relative;
+  /* left: -5px; */
+  top: -1px;
+  width: 16px;
+  height: 16px;
+}
+
+.product-payment-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.product-payment-cards a {
+  display: flex;
+  width: 80px;
+  height: 51px;
+  border-radius: 5px;
+  background: var(--color-white);
+  flex-shrink: 0;
+}
+
+.buisness-area-hilight {
+  color: var(--color-red);
+}
 
 /* Preset */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 992px) {
 }
@@ -1568,4 +1773,4 @@ h1::after {
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 320px) {
-}
+} */
