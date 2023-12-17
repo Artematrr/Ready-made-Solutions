@@ -1386,8 +1386,11 @@ h1::after {
   flex-grow: 1;
 }
 @media screen and (max-width: 768px) {
-  .services-table-item {
-    padding: 0px 0px;
+  .services-table-item-category {
+    padding: 5px 10px;
+  }
+  .services-table-item-row {
+    padding: 5px 10px;
   }
   .item-name {
     width: 50%;
