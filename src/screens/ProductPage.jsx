@@ -9,145 +9,163 @@ const Product = () => {
 
       <div className='section'>
         <div className='product-preview-wrapper'>
-          <div className='col-one'>
-            <div className='product-preview'>
-              <img
-                src='img/product-preview-1.png'
-                alt='product-preview-1'
-                loading='lazy'
-              />
-            </div>
+          <div className='product-preview'>
+            <img
+              src='img/product-preview-1.png'
+              alt='product-preview-1'
+              loading='lazy'
+            />
           </div>
 
-          <div className='col-two'>
-            <div className='product-detail'>
-              <div className='product-description'>
-                <div className='product-detail-title'>
-                  Встроенный функционал:
+          <div className='product-detail'>
+            <div className='product-description'>
+              <div className='card-top'>
+                <div className='row'>
+                  <div className='card-tag'>#Лендинги</div>
+                  <div className='card-article'>Арт. L-028</div>
+                  <div className='card-favourites'>
+                    <i className='heart-empty'></i>
+                  </div>
                 </div>
-                <div className='product-detail-title'>Бесплатная установка:</div>
-                <div className='product-detail-text'>
-                  подключение и настройка сайта на ваш домен, хостинг и SSL
-                  сертификата
+                <div className='card-title'>Натуральные напитки </div>
+              </div>
+              <div className='card-price row'>
+                <div className='price-new'>12500 руб.</div>
+                <div className='price-old'>14500 руб.</div>
+              </div>
+              <div className='card-buttons'>
+                <div className='button-buy'>
+                  <a href='#'>Купить</a>
+                </div>
+                <div className='button-demo'>
+                  <a href='#'>Демо</a>
+                </div>
+                <div className='button-about'>
+                  <a href='product'>Подробнее</a>
                 </div>
               </div>
+              <div className='product-detail-phone'>
+                <span className='product-detail-title'> Есть вопросы? </span>
+                <span className='product-detail-title f-red'>+79262565756</span>
+              </div>
+              <div className='product-detail-title'>Встроенный функционал:</div>
+              <ul className='product-detail-text product-detail-list'>
+                <li>Адаптивный дизайн</li>
+                <li>Формы обратной связи и записи</li>
+                <li>Корзина для формирования заказа</li>
+                <li>Интеграция с месенджерами</li>
+                <li>Отображение соц сетей</li>
+                <li>В каждом блоке содержится функционал слайда</li>
+                <li>Сайт оптимизирован под SEO</li>
+                <li>На заливку контента у вас уйдет от 30 мин до 1 часа</li>
+              </ul>
+              <div className='product-detail-more'>
+                <a href='#'>Ещё</a>
+              </div>
+              <div className='product-detail-title'>Бесплатная установка:</div>
+              <div className='product-detail-text'>
+                подключение и настройка сайта на ваш домен, хостинг и SSL
+                сертификата
+              </div>
+            </div>
 
-              <div className='product-extra'>
-                <div className='product-detail-title'>
-                  Дополнительных функционал:
-                </div>
-                <div className='product-exta-check-list'>
-                  <div className='product-exta-check-item'>
-                    <input
-                      className='product-exta-check-box'
-                      type='checkbox'
-                      id='extra1'
-                    />
-                    <label
-                      className='product-exta-check-label'
-                      htmlFor='extra1'
-                    >
-                      Хостинг + домен
-                    </label>
-                    <div className='product-exta-check-price'>1500 р</div>
-                  </div>
-                  <div className='product-exta-check-item'>
-                    <input
-                      className='product-exta-check-box'
-                      type='checkbox'
-                      id='extra2'
-                    />
-                    <label
-                      className='product-exta-check-label'
-                      htmlFor='extra2'
-                    >
-                      Установка на хостинг
-                    </label>
-                    <div className='product-exta-check-price'>1500 р</div>
-                  </div>
-                  <div className='product-exta-check-item'>
-                    <input
-                      className='product-exta-check-box'
-                      type='checkbox'
-                      id='extra3'
-                    />
-                    <label
-                      className='product-exta-check-label'
-                      htmlFor='extra3'
-                    >
-                      Наполнение
-                    </label>
-                    <div className='product-exta-check-price'>1500 р</div>
-                  </div>
-                  <div className='product-exta-check-item'>
-                    <input
-                      className='product-exta-check-box'
-                      type='checkbox'
-                      id='extra4'
-                    />
-                    <label
-                      className='product-exta-check-label'
-                      htmlFor='extra4'
-                    >
-                      Интеграция с 1С
-                    </label>
-                    <div className='product-exta-check-price'>1500 р</div>
-                  </div>
-                </div>
-                <div className='product-exta-more'>
-                  <a href='#'>Ещё</a>
-                </div>
-                <div className='product-exta-add'>
-                  <div className='button-primary'>
-                    <a href='#'>Добавить к корзине</a>
-                  </div>
-                </div>
+            <div className='product-extra'>
+              <div className='product-detail-title'>
+                Дополнительных функционал:
               </div>
 
-              <div className='product-payment'>
-                <div className='product-detail-title'>К оплате принимаются:</div>
-                <div className='product-payment-cards'>
-                  <a href='#'>
-                    <img
-                      loading='lazy'
-                      src='img/icons/pay-mir.svg'
-                      alt='pay-mir'
-                    />
-                  </a>
-                  <a href='#'>
-                    <img
-                      src='img/icons/pay-master-card.svg'
-                      alt='pay-master-card'
-                    />
-                  </a>
-                  <a href='#'>
-                    <img
-                      loading='lazy'
-                      src='img/icons/pay-visa.svg'
-                      alt='pay-visa'
-                    />
-                  </a>
-                  <a href='#'>
-                    <img
-                      src='img/icons/pay-you-money.svg'
-                      alt='pay-you-money'
-                    />
-                  </a>
-                  <a href='#'>
-                    <img
-                      loading='lazy'
-                      src='img/icons/pay-sbp.svg'
-                      alt='pay-sbp'
-                    />
-                  </a>
-                  <a href='#'>
-                    <img
-                      loading='lazy'
-                      src='img/icons/pay-qr.svg'
-                      alt='pay-qr'
-                    />
-                  </a>
+              <div className='product-exta-check-list'>
+                <div className='product-exta-check-item'>
+                  <input
+                    className='product-exta-check-box'
+                    type='checkbox'
+                    id='extra1'
+                  />
+                  <label className='product-exta-check-label' htmlFor='extra1'>
+                    Хостинг + домен
+                  </label>
+                  <div className='product-exta-check-price'>1500 р</div>
                 </div>
+                <div className='product-exta-check-item'>
+                  <input
+                    className='product-exta-check-box'
+                    type='checkbox'
+                    id='extra2'
+                  />
+                  <label className='product-exta-check-label' htmlFor='extra2'>
+                    Установка на хостинг
+                  </label>
+                  <div className='product-exta-check-price'>1500 р</div>
+                </div>
+                <div className='product-exta-check-item'>
+                  <input
+                    className='product-exta-check-box'
+                    type='checkbox'
+                    id='extra3'
+                  />
+                  <label className='product-exta-check-label' htmlFor='extra3'>
+                    Наполнение
+                  </label>
+                  <div className='product-exta-check-price'>1500 р</div>
+                </div>
+                <div className='product-exta-check-item'>
+                  <input
+                    className='product-exta-check-box'
+                    type='checkbox'
+                    id='extra4'
+                  />
+                  <label className='product-exta-check-label' htmlFor='extra4'>
+                    Интеграция с 1С
+                  </label>
+                  <div className='product-exta-check-price'>1500 р</div>
+                </div>
+              </div>
+              <div className='product-exta-more'>
+                <a href='#'>Ещё</a>
+              </div>
+              <div className='product-exta-add'>
+                <div className='button-primary'>
+                  <a href='#'>Добавить к корзине</a>
+                </div>
+              </div>
+            </div>
+
+            <div className='product-payment'>
+              <div className='product-detail-title'>К оплате принимаются:</div>
+              <div className='product-payment-cards'>
+                <a href='#'>
+                  <img
+                    loading='lazy'
+                    src='img/icons/pay-mir.svg'
+                    alt='pay-mir'
+                  />
+                </a>
+                <a href='#'>
+                  <img
+                    src='img/icons/pay-master-card.svg'
+                    alt='pay-master-card'
+                  />
+                </a>
+                <a href='#'>
+                  <img
+                    loading='lazy'
+                    src='img/icons/pay-visa.svg'
+                    alt='pay-visa'
+                  />
+                </a>
+                <a href='#'>
+                  <img src='img/icons/pay-you-money.svg' alt='pay-you-money' />
+                </a>
+                <a href='#'>
+                  <img
+                    loading='lazy'
+                    src='img/icons/pay-sbp.svg'
+                    alt='pay-sbp'
+                  />
+                </a>
+                <a href='#'>
+                  <img loading='lazy' src='img/icons/pay-qr.svg' alt='pay-qr' />
+                </a>
               </div>
             </div>
           </div>
@@ -157,8 +175,21 @@ const Product = () => {
       <div className='section'>
         <h1>
           Под какие сферы бизнеса подходит сайт{' '}
-          <span className='buisness-area-hilight'>“Натуральные напитки”</span>{' '}
+          <span className='f-red'>“Натуральные напитки”</span>{' '}
         </h1>
+        <div className='buisness-area-wrapper'>
+          <div className='buisness-area-tag'>Медицина, красота, здоровье</div>
+          <div className='buisness-area-tag'>Еда, напитки, общепит</div>
+          <div className='buisness-area-tag'>Строительство, ремонт</div>
+          <div className='buisness-area-tag'>Услуги</div>
+          <div className='buisness-area-tag'>Образование, курсы, СМИ</div>
+          <div className='buisness-area-tag'>
+            Электроника, бытовое оборудование
+          </div>
+          <div className='buisness-area-tag'>Досуг, развлечения, искусство</div>
+          <div className='buisness-area-tag'>Спорт и туризм</div>
+          <div className='buisness-area-tag'>Государство и общество</div>
+        </div>
       </div>
 
       <div className='section'>

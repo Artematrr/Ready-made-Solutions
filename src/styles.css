@@ -72,6 +72,9 @@
 }
 .f-350 {
 }
+.f-red {
+  color: var(--color-red);
+}
 
 /* Reset-CSS */
 *,
@@ -1588,17 +1591,13 @@ h1::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* gap: 60px; */
-}
-.product-preview-wrapper .col-one {
-  width: 60%;
-}
-.product-preview-wrapper .col-two {
-  width: 38%;
+  gap: 60px;
 }
 .product-preview {
+  max-width: 950px;
 }
 .product-detail {
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1611,9 +1610,38 @@ h1::after {
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
 }
 .product-detail-text {
-  font-size: 14px;
-  line-height: 20px;
+  /* font-size: 14px; */
+  /* line-height: 20px; */
 }
+.product-detail-list li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.product-detail-list li::marker {
+  font-size: 8px;
+}
+.product-detail-more {
+  text-align: center;
+  text-decoration: underline;
+  position: relative;
+}
+.product-detail-more a {
+  position: relative;
+}
+.product-detail-more a::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  right: -10px;
+  top: -4px;
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid var(--color-black);
+  border-top: 2px solid var(--color-black);
+  transition: transform 0.3s;
+  transform: rotate(225deg);
+}
+
 .product-description,
 .product-extra,
 .product-payment {
@@ -1623,6 +1651,31 @@ h1::after {
   padding: 30px;
   border-radius: 8px;
   background: var(--color-gray-lightest);
+}
+.product-detail .card-title {
+  font-weight: 400;
+  font-family: 'Circe', Inter, system-ui, Arial, sans-serif;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: 1.1px;
+}
+.product-detail .price-new {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
+}
+.product-detail .card-buttons {
+  margin-bottom: 10px;
+}
+.product-detail-phone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  border-radius: 5px;
+  background: var(--color-white);
+  gap: 5px;
 }
 
 .product-exta-check-list {
@@ -1645,8 +1698,8 @@ input[type='checkbox']:checked + label,
 input[type='checkbox']:not(:checked) + label {
   display: inline-block;
   position: relative;
-  padding-left: 28px;
-  line-height: 20px;
+  padding-left: 36px;
+  /* line-height: 20px; */
   cursor: pointer;
 }
 input[type='checkbox']:checked + label:before,
@@ -1675,10 +1728,10 @@ input[type='checkbox']:not(:checked) + label:after {
 }
 input[type='checkbox']:checked + label:after,
 input[type='checkbox']:not(:checked) + label:after {
-  left: 3px;
-  top: 4px;
-  width: 20px;
-  height: 10px;
+  left: 4px;
+  top: 6px;
+  width: 18px;
+  height: 9px;
   border-radius: 1px;
   border-left: 4px solid var(--color-red);
   border-bottom: 4px solid var(--color-red);
@@ -1759,9 +1812,79 @@ input[type='checkbox']:checked + label:after {
   background: var(--color-white);
   flex-shrink: 0;
 }
-
-.buisness-area-hilight {
-  color: var(--color-red);
+@media screen and (max-width: 992px) {
+  .product-preview-wrapper {
+    flex-direction: column;
+  }
+  .product-detail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-description {
+    max-width: 90%;
+    flex-grow: 1;
+  }
+  .product-extra {
+    max-width: 45%;
+  }
+  .product-payment {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-description {
+    max-width: 90%;
+  }
+  .product-extra {
+    max-width: 90%;
+    flex-grow: 1;
+  }
+  .product-payment {
+    max-width: 90%;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-description {
+    max-width: 100%;
+  }
+  .product-extra {
+    max-width: 100%;
+  }
+  .product-payment {
+    max-width: 100%;
+  }
+}
+.buisness-area-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.buisness-area-tag {
+  display: flex;
+  padding: 5px 10px 5px 5px;
+  border-radius: 8px;
+  gap: 10px;
+  background: var(--color-gray-lightest);
+  align-items: center;
+  position: relative;
+}
+.buisness-area-tag::before {
+  content: url('img/icons/paper-plane.svg');
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  width: 28px;
+  background: var(--color-white);
+  border-radius: 50%;
+}
+.buisness-area-tag:hover {
+  filter: brightness(85%);
+  cursor: pointer;
 }
 
 /* Preset */
