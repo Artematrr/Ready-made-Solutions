@@ -1,6 +1,6 @@
 {
   "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/product", "dest": "/product" }
+    { "src": "/", "dest": "/src/screens/HomePage.jsx" },
+    { "src": "/product", "dest": "/src/screens/ProductPage.jsx" }
   ]
 }
