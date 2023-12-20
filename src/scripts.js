@@ -10,11 +10,11 @@ $(document).ready(function () {
     $(this).toggleClass('heart-full heart-empty')
   })
 
-  $('.item-buttons .button-secondary').click(function () {
+  $('.item-buttons .button-outline').click(function () {
     // $(this).closest('.services-item-container').toggleClass('open');
     var $container = $(this).closest('.services-item-container');    
 
-    $container.toggleClass('open').find('.button-secondary').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
+    $container.toggleClass('open').find('.button-outline').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
 
   })
 
