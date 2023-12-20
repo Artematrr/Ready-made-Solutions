@@ -333,7 +333,7 @@ const Sidebar = () => {
           <div className='sidebar-form-title'>
             Не знаете, какое готовое решение вам подойдёт?
           </div>
-          <div className='sidebar-form-img'>
+          <div className='sidebar-form-image'>
             <img
               loading='lazy'
               src='img/sidebar-form-image.svg'
