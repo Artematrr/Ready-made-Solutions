@@ -1,4 +1,3 @@
-import { A11y } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
@@ -8,7 +7,55 @@ const HomePage = () => {
   return (
     <main className='main'>
       <div className='section'>
-        <img src='img/homepage-hero.png' alt='' />
+        <div className='hero-wrapper'>
+          <div className='hero-description'>
+            <div className='hero-title'>
+              Готовые сайты под ключ
+              <div className='row'>
+                <span className='f-red'>
+                  от <span className='f-serif'>7000</span> рублей!
+                </span>
+              </div>
+            </div>
+
+            <div className='hero-subtitle'>
+              Сэкономьте от 75% до 95% бюджета на разработку сайта с помощью
+              готовых решений
+            </div>
+            <div className='hero-advantages-container'>
+              <div className='hero-advantage'>
+                <div className='hero-advantage-image'>
+                  <span className='hero-advantage-image-digit f-serif'>1</span>
+                </div>
+                <div className='hero-advantage-text'>
+                  Высокая конверсия сайтов в рекламе
+                </div>
+              </div>
+              <div className='hero-advantage'>
+                <div className='hero-advantage-image'>
+                  <span className='hero-advantage-image-digit f-serif'>2</span>
+                </div>
+                <div className='hero-advantage-text'>
+                  Идеально подходят для SEO-продвижения
+                </div>
+              </div>
+              <div className='hero-advantage'>
+                <div className='hero-advantage-image'>
+                  <span className='hero-advantage-image-digit f-serif'>3</span>
+                </div>
+                <div className='hero-advantage-text'>
+                  Не требуют знаний программного кода
+                </div>
+              </div>
+            </div>
+            <div className='hero-button button-primary'>
+              <a href='#'>Заказать готовое решение</a>
+            </div>
+          </div>
+          <div className='hero-image'>
+            <img src='img/hero-image.svg' alt='hero-image' loading='lazy' />
+          </div>
+        </div>
       </div>
 
       <div className='section'>
@@ -562,7 +609,7 @@ const HomePage = () => {
           </div>
 
           <div className='col-two'>
-            <div className='sidebar-form-img'>
+            <div className='sidebar-form-image'>
               <img
                 loading='lazy'
                 src='img/form-image.svg'
@@ -577,7 +624,7 @@ const HomePage = () => {
         <h1>Почему выгодно использовать наши готовые разработки?</h1>
         <div className='avantages-wrapper'>
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-1.svg'
@@ -596,7 +643,7 @@ const HomePage = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-2.svg'
@@ -614,7 +661,7 @@ const HomePage = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-3.svg'
@@ -635,7 +682,7 @@ const HomePage = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-4.svg'
@@ -654,7 +701,7 @@ const HomePage = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-5.svg'
@@ -673,7 +720,7 @@ const HomePage = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-6.svg'
@@ -726,7 +773,6 @@ const HomePage = () => {
         <div className='works-swiper-wrapper'>
           <Swiper
             className='works-swiper'
-            modules={[A11y]}
             spaceBetween={30}
             slidesPerView={4}
             breakpoints={{
@@ -878,7 +924,7 @@ const HomePage = () => {
                 <div className='item-name'>Лендинг</div>
                 <div className='item-price'>550</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -903,7 +949,7 @@ const HomePage = () => {
                 <div className='item-name'>корпоративный сайт</div>
                 <div className='item-price'>1 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -917,7 +963,7 @@ const HomePage = () => {
                 <div className='item-name'>интернет-магазин</div>
                 <div className='item-price'>3 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -942,7 +988,7 @@ const HomePage = () => {
                 <div className='item-name'>разработка логотипа</div>
                 <div className='item-price'>10 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -956,7 +1002,7 @@ const HomePage = () => {
                 <div className='item-name'>разработка иконок</div>
                 <div className='item-price'>250 руб за 1 штуку</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -986,7 +1032,7 @@ const HomePage = () => {
                   верстальщика 1100 руб
                 </div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1000,7 +1046,7 @@ const HomePage = () => {
                 <div className='item-name'>добавить новый блок</div>
                 <div className='item-price'>2 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1014,7 +1060,7 @@ const HomePage = () => {
                 <div className='item-name'>установка антиспама</div>
                 <div className='item-price'>3 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1038,7 +1084,7 @@ const HomePage = () => {
                 <div className='item-name'>написание текстов</div>
                 <div className='item-price'>300 руб за 1000 знаков</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1054,7 +1100,7 @@ const HomePage = () => {
                 </div>
                 <div className='item-price'>5 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1071,7 +1117,7 @@ const HomePage = () => {
                 </div>
                 <div className='item-price'>10 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1086,7 +1132,7 @@ const HomePage = () => {
                 <div className='item-name'>заливка карточек до 1000 шт</div>
                 <div className='item-price'>16 500</div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1106,7 +1152,7 @@ const HomePage = () => {
                   руб
                 </div>
                 <div className='item-buttons'>
-                  <div className='button-secondary'>
+                  <div className='button-outline'>
                     <span>Подробнее</span>
                   </div>
                   <div className='button-primary'>
@@ -1123,7 +1169,6 @@ const HomePage = () => {
         <div className='reviews-swiper-wrapper'>
           <Swiper
             className='reviews-swiper'
-            modules={[A11y]}
             spaceBetween={30}
             slidesPerView={3}
             breakpoints={{
@@ -1311,7 +1356,6 @@ const HomePage = () => {
         <div className='tips-swiper-wrapper'>
           <Swiper
             className='tips-swiper'
-            modules={[A11y]}
             spaceBetween={30}
             slidesPerView={2.5}
             breakpoints={{
@@ -1335,7 +1379,7 @@ const HomePage = () => {
           >
             <SwiperSlide>
               <a href='#' className='tip-container'>
-                <div className='tips-img'>
+                <div className='tips-image'>
                   <img src='img/tip-1.png' alt='tip-1' />
                 </div>
                 <div className='tip-text'>
@@ -1345,7 +1389,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <a href='#' className='tip-container'>
-                <div className='tips-img'>
+                <div className='tips-image'>
                   <img src='img/tip-2.png' alt='tip-2' />
                 </div>
                 <div className='tip-text'>Текст как инструмент продвижения</div>
@@ -1353,7 +1397,7 @@ const HomePage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <a href='#' className='tip-container'>
-                <div className='tips-img'>
+                <div className='tips-image'>
                   <img src='img/tip-3.png' alt='tip-3' />
                 </div>
                 <div className='tip-text'>
