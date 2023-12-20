@@ -1,4 +1,4 @@
-import { A11y } from 'swiper/modules'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Breadcrumbs from '../components/elements/Breadcrumbs'
 
@@ -272,7 +272,7 @@ const Product = () => {
         <div className='works-swiper-wrapper'>
           <Swiper
             className='works-swiper'
-            modules={[A11y]}
+            
             spaceBetween={30}
             slidesPerView={4}
             breakpoints={{
