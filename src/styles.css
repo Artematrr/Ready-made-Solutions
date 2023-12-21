@@ -198,7 +198,6 @@ select {
 
 .main {
   margin-inline: auto;
-  /* max-width: 1410px; */
   max-width: 2560px;
   padding-inline: 20px;
 }
