@@ -64,16 +64,34 @@ const HomePage = () => {
         <div className='sort-wrapper'>
           <div className='sort-label'>Сортировать по:</div>
           <div className='sort-container'>
-            <div className='sort-current' data-sort='йцй'>Популярности ↑</div>
+            <div className='sort-current' data-sort='popularity_asc'>
+              Популярности ↑
+            </div>
             <div className='sort-dropdown'>
-              <a data-sort='popularity_asc' href='#'>Популярности ↑</a>
-              <a data-sort='popularity_desc' href='#'>Популярности ↓</a>
-              <a data-sort='price_asc' href='#'>Цене ↑</a>
-              <a data-sort='price_desc' href='#'>Цене ↓</a>
-              <a data-sort='date_asc' href='#'>Дате ↑</a>
-              <a data-sort='date_desc' href='#'>Дате ↓</a>
-              <a data-sort='rating_asc' href='#'>Рейтингу ↑</a>
-              <a data-sort='rating_desc' href='#'>Рейтингу ↓</a>
+              <a data-sort='popularity_asc' href='#'>
+                Популярности ↑
+              </a>
+              <a data-sort='popularity_desc' href='#'>
+                Популярности ↓
+              </a>
+              <a data-sort='price_asc' href='#'>
+                Цене ↑
+              </a>
+              <a data-sort='price_desc' href='#'>
+                Цене ↓
+              </a>
+              <a data-sort='date_asc' href='#'>
+                Дате ↑
+              </a>
+              <a data-sort='date_desc' href='#'>
+                Дате ↓
+              </a>
+              <a data-sort='rating_asc' href='#'>
+                Рейтингу ↑
+              </a>
+              <a data-sort='rating_desc' href='#'>
+                Рейтингу ↓
+              </a>
             </div>
           </div>
         </div>

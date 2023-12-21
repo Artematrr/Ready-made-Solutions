@@ -8,24 +8,27 @@ $(document).ready(function () {
 
   // Sort
   var currentSort = localStorage.getItem('data-sort');
-  updateSortDisplay(currentSort);
 
+  if (currentSort) {
+    updateSortDisplay(currentSort);
+  } else {
+    updateSortDisplay('popularity_desc');
+  }   
+  
   $('.sort-dropdown a').on('click', function(e) {
     e.preventDefault();
     var newSort = $(this).attr('data-sort');
     localStorage.setItem('data-sort', newSort);
     updateSortDisplay(newSort);
+    
     $('.sort-dropdown').hide();
   });
-
-  $('.sort-container').on('hover',
-    function() {
-      $('.sort-dropdown').show();
-    },
-    function() {
-      $('.sort-dropdown').hide();
-    }
-  );
+  
+  $('.sort-container').on('mouseenter touchstart', function() {
+    $('.sort-dropdown').show();
+  }).on('mouseleave touchend', function() {
+    $('.sort-dropdown').hide();
+  });
 
   function updateSortDisplay(sortValue) {
     var sortTextMap = {
