@@ -2,23 +2,69 @@ import $ from "jquery";
 // import Swiper from 'swiper'
 
 $(document).ready(function () {
-  $('.level-1 > a').click(function () {
+  $('.level-1 > a').on('click',function () {
     $(this).toggleClass('open')
   })
 
-  $('.card-favourites i').click(function () {
+  // Sort
+  var currentSort = localStorage.getItem('data-sort');
+  updateSortDisplay(currentSort);
+
+  $('.sort-dropdown a').on('click', function(e) {
+    e.preventDefault();
+    var newSort = $(this).attr('data-sort');
+    localStorage.setItem('data-sort', newSort);
+    updateSortDisplay(newSort);
+    $('.sort-dropdown').hide();
+  });
+
+  $('.sort-container').on('hover',
+    function() {
+      $('.sort-dropdown').show();
+    },
+    function() {
+      $('.sort-dropdown').hide();
+    }
+  );
+
+  function updateSortDisplay(sortValue) {
+    var sortTextMap = {
+      'popularity_asc': 'Популярности ↑',
+      'popularity_desc': 'Популярности ↓',
+      'price_asc': 'Цене ↑',
+      'price_desc': 'Цене ↓',
+      'date_asc': 'Дате ↑',
+      'date_desc': 'Дате ↓',
+      'rating_asc': 'Рейтингу ↑',
+      'rating_desc': 'Рейтингу ↓'
+    };
+
+    var displayText = sortTextMap[sortValue] || sortValue;
+    $('.sort-current').attr('data-sort', sortValue).text(displayText);
+  }
+
+  // tags
+  $('.tags-wrapper a').on('click', function(e) {
+    e.preventDefault();
+    $('.tags-wrapper a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  // Product cards
+  $('.card-favourites i').on('click',function () {
     $(this).toggleClass('heart-full heart-empty')
   })
 
-  $('.item-buttons .button-outline').click(function () {
+  // 
+  $('.item-buttons .button-outline').on('click',function () {
     // $(this).closest('.services-item-container').toggleClass('open');
     var $container = $(this).closest('.services-item-container');    
 
     $container.toggleClass('open').find('.button-outline').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
-
   })
 
-  $('.qna-item-title').click(function () {
+  // QnA
+  $('.qna-item-title').on('click',function () {
     $(this).parent('.qna-item').toggleClass('open')
   })
 })

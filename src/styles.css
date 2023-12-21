@@ -989,7 +989,7 @@ h1::after {
   .hero-wrapper {
     flex-direction: column;
   }
-  
+
   .hero-image {
     display: none;
   }
@@ -1006,7 +1006,7 @@ h1::after {
   .hero-description {
     padding: 30px 0px 30px 00px;
   }
-  .hero-button{
+  .hero-button {
     align-self: center;
   }
 }
@@ -1017,38 +1017,36 @@ h1::after {
   gap: 10px;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  /* font-size: 14px; */
-  /* line-height: 14px; */
-}
-.sort-label {
 }
 .sort-container {
   position: relative;
-  max-width: 170px;
+  max-width: max-content;
   width: 100%;
-  
+  max-width: 180px;
 }
 .sort-container:hover {
   background: var(--color-white);
 }
-.sort-corrent {
+.sort-current {
   color: var(--color-red);
-  padding: 5px 15px;
+  padding: 5px 30px 5px 15px;
   position: relative;
+  width: 100%;
 }
 .sort-dropdown {
   display: none;
   position: absolute;
   flex-direction: column;
   background: var(--color-white);
-  max-width: 170px;
+  min-width: max-content;
   width: 100%;
   z-index: 2;
 }
-.sort-container:has(.sort-corrent:hover) .sort-dropdown,
+.sort-container:has(.sort-current:hover) .sort-dropdown,
 .sort-container:has(.sort-dropdown:hover) .sort-dropdown {
   display: flex;
 }
+
 .sort-dropdown a {
   padding: 5px 15px;
   color: var(--color-dark);
@@ -1072,6 +1070,17 @@ h1::after {
 .sort-container:has(.sort-dropdown:hover) .sort-container:after,
 .sort-container:hover:after {
   transform: rotate(45deg);
+}
+@media screen and (max-width: 480px) {
+  .sort-label {
+    width: 100%;
+  }
+  .sort-container {
+    width: 100%;
+  }
+  .sort-current {
+    padding-left: 0px;
+  }
 }
 
 .tags-wrapper {
@@ -1357,7 +1366,7 @@ h1::after {
 .avantages-item-image {
   display: flex;
   justify-content: center;
-  min-width: 100px;    
+  min-width: 100px;
   min-height: 100px;
   overflow: hidden;
   padding: 10px;
