@@ -2,7 +2,10 @@ import $ from "jquery";
 // import Swiper from 'swiper'
 
 $(document).ready(function () {
-  $('.level-1 > a').on('click',function () {
+  
+  // Sidebar
+  $('.level-1 > a').on('click',function (e) {
+    e.preventDefault();
     $(this).toggleClass('open')
   })
 
@@ -58,7 +61,7 @@ $(document).ready(function () {
     $(this).toggleClass('heart-full heart-empty')
   })
 
-  // services
+  // Services
   $('.item-buttons .button-outline').on('click',function () {
     var $container = $(this).closest('.services-item-container');    
 
