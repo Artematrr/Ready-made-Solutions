@@ -58,9 +58,8 @@ $(document).ready(function () {
     $(this).toggleClass('heart-full heart-empty')
   })
 
-  // 
+  // services
   $('.item-buttons .button-outline').on('click',function () {
-    // $(this).closest('.services-item-container').toggleClass('open');
     var $container = $(this).closest('.services-item-container');    
 
     $container.toggleClass('open').find('.button-outline').text($container.hasClass('open') ? 'Свернуть' : 'Подробнее');
