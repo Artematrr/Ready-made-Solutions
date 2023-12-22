@@ -296,10 +296,10 @@ a {
   cursor: pointer;
 }
 h1 {
-  font-size: 34px;
+  font-size: clamp(24px, 6vw, 34px);
+  line-height: 1.25;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 42.5px;
   text-transform: uppercase;
   word-break: break-word;
 }
@@ -924,21 +924,21 @@ h1::after {
   flex-shrink: 0 1;
 }
 .hero-title {
-  font-size: 48px;
+  font-size: clamp(36px, 7vw, 48px);
+  line-height: 1.25;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 50px;
   text-transform: uppercase;
 }
 .hero-title .f-red {
   text-transform: lowercase;
 }
 .hero-subtitle {
+  font-size: clamp(20px, 4vw, 22px);
+  line-height: 1.2;
   color: var(--color-dark);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  font-size: 22px;
-  line-height: 26px;
   letter-spacing: 1.1px;
 }
 .hero-advantages-container {
@@ -989,11 +989,11 @@ h1::after {
   mask-composite: exclude;
 }
 .hero-advantage-text {
+  font-size: 17px;
+  line-height: 1.2;
   color: var(--color-dark);
   font-family: 'Circe Light', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-weight: 350;
-  font-size: 17px;
-  line-height: 20px;
 }
 .hero-button {
   max-width: 315px;
@@ -1099,6 +1099,10 @@ h1::after {
   .sort-current {
     padding-left: 0px;
   }
+  .sort-dropdown a {
+    padding-left: 0px;
+  }
+
 }
 
 .tags-wrapper {
@@ -1184,15 +1188,15 @@ h1::after {
 }
 .card-tag {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   max-width: 300px;
   word-break: break-all;
 }
 .card-title {
   font-size: 17px;
+  line-height: 1.2;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 20px;
   padding-right: 24px;
 }
 .card-article {
@@ -1432,15 +1436,15 @@ h1::after {
   row-gap: 5px;
 }
 .avantages-item-title {
-  color: var(--color-dark);
   font-size: 17px;
+  line-height: 1.25;
+  color: var(--color-dark);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 25px;
 }
 .avantages-item-text {
   color: var(--color-dark);
-  line-height: 20px;
+  line-height: 1.2;
 }
 @media screen and (max-width: 768px) {
   .avantages-wrapper {
@@ -1492,16 +1496,16 @@ h1::after {
 }
 .slide-title {
   margin-bottom: 10px;
+  line-height: 1.2;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 20px;
 }
 .slide-city {
+  font-size: 12px;
+  line-height: 1.16;
   margin-bottom: 15px;
   font-family: 'Circe Light', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-weight: 350;
-  font-size: 12px;
-  line-height: 14px;
 }
 .slide-button {
 }
@@ -1572,19 +1576,19 @@ h1::after {
   align-items: center;
 }
 .category-title {
-  color: var(--color-red);
   font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-red);
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 20px;
 }
 .item-name {
+  font-size: 16px;
+  line-height: 1.2;
   display: flex;
   width: 38%;
-  font-size: 16px;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
-  line-height: 20px;
 }
 .item-price {
   width: 38%;
@@ -1709,8 +1713,8 @@ h1::after {
   transform: rotate(225deg);
 }
 .qna-item-title {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: clamp(20px, 4vw, 22px);
+  line-height: 1.2;
   letter-spacing: 1.1px;
   position: relative;
   cursor: pointer;
@@ -1766,8 +1770,8 @@ h1::after {
   width: 100%;
 }
 .tip-text {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: clamp(20px, 4vw, 22px);
+  line-height: 1.2;
   letter-spacing: 1.1px;
 }
 
@@ -1783,25 +1787,25 @@ h1::after {
   max-width: 950px;
 }
 .product-detail {
-  max-width: 450px;
+  /* max-width: 450px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 .product-detail-title {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 1.1px;
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
 }
 .product-detail-text {
-  /* font-size: 14px; */
-  /* line-height: 20px; */
+  font-size: 16px;
+  line-height: 1.4;
 }
 .product-detail-list li {
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: 24px;
 }
 .product-detail-list li::marker {
   font-size: 8px;
@@ -1842,7 +1846,7 @@ h1::after {
   font-weight: 400;
   font-family: 'Circe', Inter, system-ui, Arial, sans-serif;
   font-size: 34px;
-  line-height: 42px;
+  line-height: 1.25;
   letter-spacing: 1.1px;
 }
 .product-detail .price-new {
@@ -1885,7 +1889,6 @@ input[type='checkbox']:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 36px;
-  /* line-height: 20px; */
   cursor: pointer;
 }
 input[type='checkbox']:checked + label::before,
@@ -1998,6 +2001,7 @@ input[type='checkbox']:checked + label::after {
   background: var(--color-white);
   flex-shrink: 0;
 }
+
 @media screen and (max-width: 992px) {
   .product-preview-wrapper {
     flex-direction: column;
