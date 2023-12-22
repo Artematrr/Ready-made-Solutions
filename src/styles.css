@@ -629,6 +629,7 @@ h1::after {
   flex-wrap: wrap;
   min-height: 50px;
   background: var(--color-dark);
+  padding-block: 10px;
 }
 .nav-button {
   padding-inline: 20px;
@@ -652,16 +653,21 @@ h1::after {
   background: var(--color-red);
 }
 
+.nav-toggle-sidebar {
+  color: var(--color-white);
+  user-select: none;
+  cursor: pointer;
+  display: none;
+}
 .sidebar-wrapper .nav-toggle-sidebar {
   color: var(--color-black);
   margin-bottom: 10px;
   width: 100%;
 }
-
-.nav-toggle-sidebar {
-  color: var(--color-white);
-  user-select: none;
-  cursor: pointer;
+@media screen and (max-width: 1200px) {
+  .nav-toggle-sidebar {
+    display: flex;
+  }
 }
 
 .nav-order-site {
