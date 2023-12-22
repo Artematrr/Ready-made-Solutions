@@ -2,11 +2,15 @@ const Sidebar = () => {
   return (
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
+        <div className='nav-toggle-sidebar'>
+          <a> &#9776;</a>
+        </div>
         <div className='logo'>
           <a href='/'>
             <img loading='lazy' src='img/logo.svg' alt='Готовые Решения' />
           </a>
         </div>
+
         <div className='sidebar-nav-label'>Каталог сайтов</div>
         <div className='sidebar-nav'>
           <ul className='sidebar-nav-list'>

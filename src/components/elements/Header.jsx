@@ -2,6 +2,9 @@ const Header = () => {
   return (
     <header className='header'>
       <nav className='nav-container'>
+          <div className='nav-button nav-toggle-sidebar'>
+            <a> &#9776;</a>
+          </div>
         <div className='nav-button nav-city'>
           <a href='#'>Москва</a>
           <div className='nav-city-dropdown'>
@@ -37,7 +40,7 @@ const Header = () => {
         <div className='nav-button nav-phone'>
           <a href='#'>+7 (495) 000-00-00</a>
         </div>
-        <div className='nav-button order-site'>
+        <div className='nav-button nav-order-site'>
           <a href='#'>Заказать сайт</a>
         </div>
       </nav>

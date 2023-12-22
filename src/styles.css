@@ -345,20 +345,22 @@ h1::after {
   border-right: 1px solid var(--color-red);
   padding: 10px 5px 10px 30px;
   position: sticky;
-  z-index: 2;
+  z-index: 3;
   top: 0;
 }
 .sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 .logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .sidebar-nav-label,
 .sidebar-tags-label {
   font-weight: 700;
   font-family: 'Circe Bold', 'Circe', Inter, system-ui, Arial, sans-serif;
   font-size: 18px;
-  margin-bottom: 10px;
 }
 .sidebar-nav {
   font-size: 15px;
@@ -495,7 +497,6 @@ h1::after {
   display: flex;
   flex-wrap: wrap;
 }
-
 .sidebar-form-inputs input,
 .sidebar-form-inputs select {
   background: var(--color-white);
@@ -547,8 +548,7 @@ h1::after {
   align-items: center;
 }
 .main .sidebar-form-title {
-
-  font-size:  50px;
+  font-size: 50px;
   font-size: clamp(26px, 4vw, 50px);
 }
 .main .sidebar-form-inputs {
@@ -605,22 +605,23 @@ h1::after {
 @media screen and (max-width: 1200px) {
   .sidebar-wrapper {
     display: none;
+    position: fixed;
   }
 }
 
 /* Header */
-.header {
-  /* position: fixed;
+/* .header {
+ position: fixed;
   width: 100%;
   max-width: calc(100% - 350px);
   top: 0;
-  z-index: 3; */
+  z-index: 3;
 }
 @media screen and (max-width: 1200px) {
   .header {
-    /* max-width: 100%; */
+    max-width: 100%;
   }
-}
+} */
 
 .nav-container {
   display: flex;
@@ -637,7 +638,7 @@ h1::after {
   flex-direction: row;
   gap: 10px;
 }
-.nav-button.active{
+.nav-button.active {
   background: var(--color-red);
 }
 .nav-button a {
@@ -650,7 +651,20 @@ h1::after {
 .nav-button:hover {
   background: var(--color-red);
 }
-.nav-button.order-site {
+
+.sidebar-wrapper .nav-toggle-sidebar {
+  color: var(--color-black);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.nav-toggle-sidebar {
+  color: var(--color-white);
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav-order-site {
   background: var(--color-red);
 }
 
@@ -1106,7 +1120,6 @@ h1::after {
   .sort-dropdown a {
     padding-left: 0px;
   }
-
 }
 
 .tags-wrapper {
@@ -1280,7 +1293,7 @@ h1::after {
 }
 .button-buy a {
   color: var(--color-red);
-  display: inline-flex; 
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }

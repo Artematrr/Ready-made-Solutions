@@ -9,6 +9,11 @@ $(document).ready(function () {
     $(this).toggleClass('open')
   })
 
+  $(".nav-toggle-sidebar").on("click", function () {
+    $(".sidebar-wrapper").toggle();
+  });
+    
+
   // Sort
   var currentSort = localStorage.getItem('data-sort');
 
@@ -38,7 +43,7 @@ $(document).ready(function () {
     };
 
     var displayText = sortTextMap[sortValue] || sortValue;
-    
+
     $('.sort-current').attr('data-sort', sortValue).text(displayText);
   }
 
