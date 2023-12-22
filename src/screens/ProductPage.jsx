@@ -404,7 +404,7 @@ const Product = () => {
         <h1>Почему выгодно использовать наши готовые разработки?</h1>
         <div className='avantages-wrapper'>
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-1.svg'
@@ -423,7 +423,7 @@ const Product = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-2.svg'
@@ -441,7 +441,7 @@ const Product = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-3.svg'
@@ -462,7 +462,7 @@ const Product = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-4.svg'
@@ -481,7 +481,7 @@ const Product = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-5.svg'
@@ -500,7 +500,7 @@ const Product = () => {
           </div>
 
           <div className='avantages-item'>
-            <div className='avantages-item-img'>
+            <div className='avantages-item-image'>
               <img
                 loading='lazy'
                 src='img/icons/advantage-6.svg'
