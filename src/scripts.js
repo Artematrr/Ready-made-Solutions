@@ -23,14 +23,6 @@ $(document).ready(function () {
     var newSort = $(this).attr('data-sort');
     localStorage.setItem('data-sort', newSort);
     updateSortDisplay(newSort);
-    
-    $('.sort-dropdown').hide();
-  });
-  
-  $('.sort-container').on('mouseenter touchstart', function() {
-    $('.sort-dropdown').show();
-  }).on('mouseleave touchend', function() {
-    $('.sort-dropdown').hide();
   });
 
   function updateSortDisplay(sortValue) {
@@ -46,6 +38,7 @@ $(document).ready(function () {
     };
 
     var displayText = sortTextMap[sortValue] || sortValue;
+    
     $('.sort-current').attr('data-sort', sortValue).text(displayText);
   }
 
