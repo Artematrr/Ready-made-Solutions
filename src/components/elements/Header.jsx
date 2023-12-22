@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header>
+    <header className='header'>
       <nav className='nav-container'>
         <div className='nav-button nav-city'>
           <a href='#'>Москва</a>
@@ -22,7 +22,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className='nav-button'>
+        <div className='nav-button active'>
           <a href='#'>Каталог сайтов</a>
         </div>
         <div className='nav-button'>
