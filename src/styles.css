@@ -515,8 +515,10 @@ h1::after {
 }
 .sidebar-form-label-button {
   color: var(--color-gray-dark);
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1;
+  font-family: 'Circe Light', 'Circe', Inter, system-ui, Arial, sans-serif;
+  font-weight: 350;
 }
 .sidebar-form-button {
   border: none;
@@ -545,7 +547,9 @@ h1::after {
   align-items: center;
 }
 .main .sidebar-form-title {
-  font-size: 50px;
+
+  font-size:  50px;
+  font-size: clamp(26px, 4vw, 50px);
 }
 .main .sidebar-form-inputs {
   align-items: flex-start;
@@ -1726,6 +1730,9 @@ h1::after {
   display: block;
   color: var(--color-gray-dark);
   letter-spacing: 0.4px;
+  line-height: 1.2;
+  font-family: 'Circe Light', 'Circe', Inter, system-ui, Arial, sans-serif;
+  font-weight: 350;
 }
 .qna-more {
   text-align: center;
