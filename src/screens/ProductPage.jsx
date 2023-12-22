@@ -230,7 +230,7 @@ const Product = () => {
           </div>
 
           <div className='col-two'>
-            <div className='sidebar-form-img'>
+            <div className='sidebar-form-image'>
               <img
                 loading='lazy'
                 src='img/form-image.svg'
