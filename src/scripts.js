@@ -2,7 +2,7 @@ import $ from "jquery";
 // import Swiper from 'swiper'
 
 $(document).ready(function () {
-  
+
   // Sidebar
   $('.level-1 > a').on('click',function (e) {
     e.preventDefault();
@@ -49,7 +49,7 @@ $(document).ready(function () {
     $('.sort-current').attr('data-sort', sortValue).text(displayText);
   }
 
-  // tags
+  // Tags
   $('.tags-wrapper a').on('click', function(e) {
     e.preventDefault();
     $('.tags-wrapper a').removeClass('active');
