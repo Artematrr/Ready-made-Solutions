@@ -665,6 +665,10 @@ h1::after {
   width: 100%;
 }
 
+.nav-logo {
+  display: none;
+}
+
 .nav-order-site {
   background: var(--color-red);
 }
