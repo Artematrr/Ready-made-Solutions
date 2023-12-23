@@ -3,8 +3,10 @@ const Sidebar = () => {
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
         <div className='nav-toggle-sidebar'>
-          <a> &#9776;</a>
+          <a> X</a>
         </div>
+       
+
         <div className='logo'>
           <a href='/'>
             <img loading='lazy' src='img/logo.svg' alt='Готовые Решения' />
@@ -387,6 +389,8 @@ const Sidebar = () => {
           <a>Корпоративные</a>
           <a>Визитки</a>
         </div>
+
+    
       </div>
     </aside>
   )

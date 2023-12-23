@@ -2,9 +2,18 @@ const Header = () => {
   return (
     <header className='header'>
       <nav className='nav-container'>
-          <div className='nav-button nav-toggle-sidebar'>
-            <a> &#9776;</a>
-          </div>
+        <div className='nav-button nav-toggle-sidebar'>
+          <a> &#9776;</a>
+        </div>
+        <div className='nav-button nav-logo'>
+          <a href='/'>
+            <img
+              loading='lazy'
+              src='img/favicon.svg'
+              alt='Готовые решения'
+            />
+          </a>
+        </div>
         <div className='nav-button nav-city'>
           <a href='#'>Москва</a>
           <div className='nav-city-dropdown'>

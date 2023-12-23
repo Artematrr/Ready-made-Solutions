@@ -606,6 +606,7 @@ h1::after {
   .sidebar-wrapper {
     display: none;
     position: fixed;
+    padding: 15px 5px 10px 20px;
   }
 }
 
@@ -629,7 +630,7 @@ h1::after {
   flex-wrap: wrap;
   min-height: 50px;
   background: var(--color-dark);
-  padding-block: 10px;
+  /* padding-block: 10px; */
 }
 .nav-button {
   padding-inline: 20px;
@@ -663,11 +664,6 @@ h1::after {
   color: var(--color-black);
   margin-bottom: 10px;
   width: 100%;
-}
-@media screen and (max-width: 1200px) {
-  .nav-toggle-sidebar {
-    display: flex;
-  }
 }
 
 .nav-order-site {
@@ -817,6 +813,23 @@ h1::after {
 }
 .breadcrumbs a:last-child {
   color: var(--color-red);
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-container {
+    justify-content: space-between;
+    flex-shrink: 0 1;
+  }
+  .nav-button {
+    display: none;
+  }
+  .nav-toggle-sidebar {
+    display: flex;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Footer */
