@@ -1249,7 +1249,8 @@ h1::after {
   cursor: pointer;
 }
 .card-price {
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 0px;
 }
 .price-new {
   color: var(--color-black);
@@ -2079,13 +2080,10 @@ input[type='checkbox']:checked + label::after {
   }
 }
 @media screen and (max-width: 480px) {
-  .product-description {
-    max-width: 100%;
-  }
-  .product-extra {
-    max-width: 100%;
-  }
+  .product-description,
+  .product-extra,
   .product-payment {
+    padding: 20px;
     max-width: 100%;
   }
 }
