@@ -13,6 +13,23 @@ $(document).ready(function () {
     $(".sidebar-wrapper").toggle();
   });
     
+  // Nav city
+  var currentCity = localStorage.getItem('data-city');
+  if (currentCity) {
+    updateCityDisplay(currentCity);
+  } else {
+    localStorage.setItem('data-city', 'Москва');
+    updateCityDisplay('Москва');
+  }   
+  $('.nav-city-dropdown a').on('click', function(e) {
+    e.preventDefault();
+    var newCity = $(this).attr('data-city');
+    localStorage.setItem('data-city', newCity);
+    updateCityDisplay(newCity);
+  });
+  function updateCityDisplay(cityValue) {
+    $('.nav-city-current').attr('data-city', cityValue).text(cityValue);
+  }
 
   // Sort
   var currentSort = localStorage.getItem('data-sort');

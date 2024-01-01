@@ -15,7 +15,7 @@ const Header = () => {
           </a>
         </div>
         <div className='nav-button nav-city'>
-          <a href='#'>Москва</a>
+          <div className='nav-city-current' data-city='Москва'>Мыыосква</div>
           <div className='nav-city-dropdown'>
             <a data-city='Москва' href='#'>
               Москва

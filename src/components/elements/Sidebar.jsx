@@ -2,6 +2,7 @@ const Sidebar = () => {
   return (
     <aside className='sidebar-wrapper'>
       <div className='sidebar-inner'>
+        
         <div className='nav-toggle-sidebar'>
           <a> X</a>
         </div>

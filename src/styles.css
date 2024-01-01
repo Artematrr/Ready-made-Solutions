@@ -675,6 +675,8 @@ h1::after {
 
 .nav-city {
   position: relative;
+  max-width: 200px;
+  line-height: 1.25;
 }
 .nav-city::before {
   content: url('/img/icons/map-mark.svg');
@@ -697,7 +699,9 @@ h1::after {
 .nav-city:hover::after {
   transform: rotate(45deg);
 }
-
+.nav-city-current {
+  color: var(--color-white);
+}
 .nav-city-dropdown {
   display: none;
   position: absolute;
